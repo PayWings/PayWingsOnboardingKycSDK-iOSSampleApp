@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B5AD84424D17C4F00481052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD84324D17C4F00481052 /* AppDelegate.swift */; };
+		3B5AD84624D17C4F00481052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD84524D17C4F00481052 /* SceneDelegate.swift */; };
+		3B5AD84824D17C4F00481052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD84724D17C4F00481052 /* ViewController.swift */; };
+		3B5AD84B24D17C4F00481052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD84924D17C4F00481052 /* Main.storyboard */; };
+		3B5AD84D24D17C5300481052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD84C24D17C5300481052 /* Assets.xcassets */; };
+		3B5AD85024D17C5300481052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD84E24D17C5300481052 /* LaunchScreen.storyboard */; };
+		3B5AD87F24D1800800481052 /* KycDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87724D1800700481052 /* KycDataViewController.swift */; };
+		3B5AD88024D1800800481052 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87824D1800700481052 /* AppStyle.swift */; };
+		3B5AD88124D1800800481052 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87924D1800700481052 /* LoadingViewController.swift */; };
+		3B5AD88324D1800800481052 /* KycErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87B24D1800700481052 /* KycErrorViewController.swift */; };
+		3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87C24D1800800481052 /* VerificationResult.swift */; };
+		3B5AD88524D1800800481052 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD87D24D1800800481052 /* Settings.bundle */; };
+		3B5AD88C24D1801400481052 /* KycErrorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD88624D1801400481052 /* KycErrorViewController.storyboard */; };
+		3B5AD88D24D1801400481052 /* LoadingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD88824D1801400481052 /* LoadingViewController.storyboard */; };
+		3B5AD88E24D1801400481052 /* KycDataViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD88A24D1801400481052 /* KycDataViewController.storyboard */; };
+		3BA9602125D5B0D8005B0B83 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA9602325D5B0D8005B0B83 /* Localizable.strings */; };
+		3BA9602925D5B201005B0B83 /* LocalizationCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */; };
+		7D2341FA42804F76D32CEF51 /* Pods_PayWingsOnboardingKYC_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F37406CAEFC3A8B98B785DB /* Pods_PayWingsOnboardingKYC_SampleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C3927BFFE38599E3EC73A7F /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		0F37406CAEFC3A8B98B785DB /* Pods_PayWingsOnboardingKYC_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWingsOnboardingKYC_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5AD84024D17C4F00481052 /* KYCSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYCSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5AD84324D17C4F00481052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B5AD84524D17C4F00481052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B5AD84724D17C4F00481052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B5AD84A24D17C4F00481052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B5AD84C24D17C5300481052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B5AD84F24D17C5300481052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B5AD85124D17C5300481052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5AD87724D1800700481052 /* KycDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KycDataViewController.swift; sourceTree = "<group>"; };
+		3B5AD87824D1800700481052 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		3B5AD87924D1800700481052 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		3B5AD87B24D1800700481052 /* KycErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KycErrorViewController.swift; sourceTree = "<group>"; };
+		3B5AD87C24D1800800481052 /* VerificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
+		3B5AD87D24D1800800481052 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3B5AD88724D1801400481052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KycErrorViewController.storyboard; sourceTree = "<group>"; };
+		3B5AD88924D1801400481052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoadingViewController.storyboard; sourceTree = "<group>"; };
+		3B5AD88B24D1801400481052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KycDataViewController.storyboard; sourceTree = "<group>"; };
+		3BA9602225D5B0D8005B0B83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BA9602425D5B0F2005B0B83 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BA9602525D5B0FE005B0B83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3BA9602625D5B109005B0B83 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationCustom.swift; sourceTree = "<group>"; };
+		625134F1835A0953A97D92CA /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B5AD83D24D17C4F00481052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2341FA42804F76D32CEF51 /* Pods_PayWingsOnboardingKYC_SampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B5AD83724D17C4F00481052 = {
+			isa = PBXGroup;
+			children = (
+				3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */,
+				3B5AD84124D17C4F00481052 /* Products */,
+				D40146CFC6E63CAA6F82A47F /* Pods */,
+				BB956F17E65C834F3894D036 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B5AD84124D17C4F00481052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5AD84024D17C4F00481052 /* KYCSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				3B5AD84924D17C4F00481052 /* Main.storyboard */,
+				3B5AD84724D17C4F00481052 /* ViewController.swift */,
+				3B5AD88824D1801400481052 /* LoadingViewController.storyboard */,
+				3B5AD87924D1800700481052 /* LoadingViewController.swift */,
+				3B5AD88A24D1801400481052 /* KycDataViewController.storyboard */,
+				3B5AD87724D1800700481052 /* KycDataViewController.swift */,
+				3B5AD88624D1801400481052 /* KycErrorViewController.storyboard */,
+				3B5AD87B24D1800700481052 /* KycErrorViewController.swift */,
+				3B5AD87C24D1800800481052 /* VerificationResult.swift */,
+				3B5AD87824D1800700481052 /* AppStyle.swift */,
+				3B5AD87D24D1800800481052 /* Settings.bundle */,
+				3B5AD84324D17C4F00481052 /* AppDelegate.swift */,
+				3B5AD84524D17C4F00481052 /* SceneDelegate.swift */,
+				3B5AD84C24D17C5300481052 /* Assets.xcassets */,
+				3B5AD84E24D17C5300481052 /* LaunchScreen.storyboard */,
+				3B5AD85124D17C5300481052 /* Info.plist */,
+				3BA9602325D5B0D8005B0B83 /* Localizable.strings */,
+				3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */,
+			);
+			path = "PayWingsOnboardingKYC-SampleApp";
+			sourceTree = "<group>";
+		};
+		BB956F17E65C834F3894D036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F37406CAEFC3A8B98B785DB /* Pods_PayWingsOnboardingKYC_SampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D40146CFC6E63CAA6F82A47F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				625134F1835A0953A97D92CA /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */,
+				0C3927BFFE38599E3EC73A7F /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B5AD83F24D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5AD85424D17C5300481052 /* Build configuration list for PBXNativeTarget "PayWingsOnboardingKYC-SampleApp" */;
+			buildPhases = (
+				BAE7416B1713E5C9D933319D /* [CP] Check Pods Manifest.lock */,
+				3B5AD83C24D17C4F00481052 /* Sources */,
+				3B5AD83D24D17C4F00481052 /* Frameworks */,
+				3B5AD83E24D17C4F00481052 /* Resources */,
+				9EBB3E861A159BF50067D8D5 /* [CP] Embed Pods Frameworks */,
+				8DD01CB02614C6E5114CA654 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PayWingsOnboardingKYC-SampleApp";
+			productName = "PayWiserOnboardingKYC-SampleApp";
+			productReference = 3B5AD84024D17C4F00481052 /* KYCSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B5AD83824D17C4F00481052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Intech;
+				TargetAttributes = {
+					3B5AD83F24D17C4F00481052 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 3B5AD83B24D17C4F00481052 /* Build configuration list for PBXProject "PayWingsOnboardingKYC-SampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 3B5AD83724D17C4F00481052;
+			productRefGroup = 3B5AD84124D17C4F00481052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B5AD83F24D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B5AD83E24D17C4F00481052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5AD88C24D1801400481052 /* KycErrorViewController.storyboard in Resources */,
+				3B5AD88E24D1801400481052 /* KycDataViewController.storyboard in Resources */,
+				3B5AD88524D1800800481052 /* Settings.bundle in Resources */,
+				3B5AD88D24D1801400481052 /* LoadingViewController.storyboard in Resources */,
+				3B5AD85024D17C5300481052 /* LaunchScreen.storyboard in Resources */,
+				3BA9602125D5B0D8005B0B83 /* Localizable.strings in Resources */,
+				3B5AD84D24D17C5300481052 /* Assets.xcassets in Resources */,
+				3B5AD84B24D17C4F00481052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DD01CB02614C6E5114CA654 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBB3E861A159BF50067D8D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE7416B1713E5C9D933319D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayWingsOnboardingKYC-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B5AD83C24D17C4F00481052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5AD88124D1800800481052 /* LoadingViewController.swift in Sources */,
+				3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */,
+				3B5AD84824D17C4F00481052 /* ViewController.swift in Sources */,
+				3B5AD84424D17C4F00481052 /* AppDelegate.swift in Sources */,
+				3B5AD88024D1800800481052 /* AppStyle.swift in Sources */,
+				3B5AD87F24D1800800481052 /* KycDataViewController.swift in Sources */,
+				3BA9602925D5B201005B0B83 /* LocalizationCustom.swift in Sources */,
+				3B5AD88324D1800800481052 /* KycErrorViewController.swift in Sources */,
+				3B5AD84624D17C4F00481052 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B5AD84924D17C4F00481052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5AD84A24D17C4F00481052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5AD84E24D17C5300481052 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5AD84F24D17C5300481052 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5AD88624D1801400481052 /* KycErrorViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5AD88724D1801400481052 /* Base */,
+			);
+			name = KycErrorViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5AD88824D1801400481052 /* LoadingViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5AD88924D1801400481052 /* Base */,
+			);
+			name = LoadingViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5AD88A24D1801400481052 /* KycDataViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5AD88B24D1801400481052 /* Base */,
+			);
+			name = KycDataViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3BA9602325D5B0D8005B0B83 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA9602225D5B0D8005B0B83 /* en */,
+				3BA9602425D5B0F2005B0B83 /* ja */,
+				3BA9602525D5B0FE005B0B83 /* zh-Hans */,
+				3BA9602625D5B109005B0B83 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B5AD85224D17C5300481052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B5AD85324D17C5300481052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B5AD85524D17C5300481052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625134F1835A0953A97D92CA /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = 2R772Q527U;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "PayWingsOnboardingKYC-SampleApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.paywiser.onboarding.kyc.PayWiserOnboardingKYC;
+				PRODUCT_NAME = KYCSampleApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B5AD85624D17C5300481052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3927BFFE38599E3EC73A7F /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_TEAM = 2R772Q527U;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "PayWingsOnboardingKYC-SampleApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.paywiser.onboarding.kyc.PayWiserOnboardingKYC;
+				PRODUCT_NAME = KYCSampleApp;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B5AD83B24D17C4F00481052 /* Build configuration list for PBXProject "PayWingsOnboardingKYC-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5AD85224D17C5300481052 /* Debug */,
+				3B5AD85324D17C5300481052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B5AD85424D17C5300481052 /* Build configuration list for PBXNativeTarget "PayWingsOnboardingKYC-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5AD85524D17C5300481052 /* Debug */,
+				3B5AD85624D17C5300481052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B5AD83824D17C4F00481052 /* Project object */;
+}

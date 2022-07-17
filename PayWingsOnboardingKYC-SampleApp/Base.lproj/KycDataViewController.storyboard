@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kyc Data View Controller-->
+        <scene sceneID="TPQ-Jk-Ycp">
+            <objects>
+                <viewController storyboardIdentifier="KycDataViewController" id="QbW-NG-F2C" customClass="KycDataViewController" customModule="KYCSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hsp-KQ-bWc" customClass="KycSecondaryView" customModule="PayWiserOnboardingKYC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAI-O2-lBb" customClass="KycContentView" customModule="PayWiserOnboardingKYC">
+                                <rect key="frame" x="40" y="44" width="334" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KYC COMPLETED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUa-9G-aMn" customClass="KycTitle" customModule="PayWiserOnboardingKYC">
+                                        <rect key="frame" x="0.0" y="40" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-n8-SwQ">
+                                        <rect key="frame" x="0.0" y="100.5" width="334" height="220"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppReferenceID" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRX-kM-Lzw" customClass="KycTextLabel" customModule="PayWiserOnboardingKYC">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="uPv-3j-XLZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ReferenceNumber" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-V0-oqo" customClass="KycTextLabel" customModule="PayWiserOnboardingKYC">
+                                                <rect key="frame" x="0.0" y="46" width="334" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Iqr-dg-O0f"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KycReferenceID" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-Mu-ECd" customClass="KycTextLabel" customModule="PayWiserOnboardingKYC">
+                                                <rect key="frame" x="0.0" y="92" width="334" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="BQo-mJ-jse"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KycID" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbB-cd-gBM" customClass="KycTextLabel" customModule="PayWiserOnboardingKYC">
+                                                <rect key="frame" x="0.0" y="138" width="334" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="u5F-9F-iCy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PersonID" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45J-q4-C9i" customClass="KycTextLabel" customModule="PayWiserOnboardingKYC">
+                                                <rect key="frame" x="0.0" y="184" width="334" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Xsa-qu-5SC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HA4-Mu-ECd" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="3c8-qS-og6"/>
+                                            <constraint firstItem="QRX-kM-Lzw" firstAttribute="top" secondItem="cLC-n8-SwQ" secondAttribute="top" id="4Io-hs-qq7"/>
+                                            <constraint firstAttribute="trailing" secondItem="QRX-kM-Lzw" secondAttribute="trailing" id="575-Ak-YRO"/>
+                                            <constraint firstItem="UX3-V0-oqo" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="9ro-9I-7Ci"/>
+                                            <constraint firstAttribute="trailing" secondItem="QRX-kM-Lzw" secondAttribute="trailing" id="Efn-ly-hjl"/>
+                                            <constraint firstItem="vbB-cd-gBM" firstAttribute="top" secondItem="HA4-Mu-ECd" secondAttribute="bottom" constant="10" id="HQN-Go-3Z4"/>
+                                            <constraint firstItem="UX3-V0-oqo" firstAttribute="top" secondItem="QRX-kM-Lzw" secondAttribute="bottom" constant="10" id="L7z-Ws-w7y"/>
+                                            <constraint firstItem="45J-q4-C9i" firstAttribute="top" secondItem="vbB-cd-gBM" secondAttribute="bottom" constant="10" id="MS7-eh-zYb"/>
+                                            <constraint firstItem="45J-q4-C9i" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="My8-Y2-3x7"/>
+                                            <constraint firstAttribute="trailing" secondItem="HA4-Mu-ECd" secondAttribute="trailing" id="Ux4-f9-LKA"/>
+                                            <constraint firstItem="QRX-kM-Lzw" firstAttribute="top" secondItem="cLC-n8-SwQ" secondAttribute="top" id="XSM-EM-xfi"/>
+                                            <constraint firstItem="vbB-cd-gBM" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="Y1f-Ko-2cf"/>
+                                            <constraint firstAttribute="trailing" secondItem="UX3-V0-oqo" secondAttribute="trailing" id="YsO-4b-rfa"/>
+                                            <constraint firstItem="HA4-Mu-ECd" firstAttribute="top" secondItem="UX3-V0-oqo" secondAttribute="bottom" constant="10" id="bGy-Ef-fQE"/>
+                                            <constraint firstItem="QRX-kM-Lzw" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="eID-Eu-skU"/>
+                                            <constraint firstAttribute="trailing" secondItem="vbB-cd-gBM" secondAttribute="trailing" id="ivX-le-zeP"/>
+                                            <constraint firstAttribute="trailing" secondItem="45J-q4-C9i" secondAttribute="trailing" id="jwx-Aa-lDJ"/>
+                                            <constraint firstItem="QRX-kM-Lzw" firstAttribute="leading" secondItem="cLC-n8-SwQ" secondAttribute="leading" id="qwe-mC-Kpp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NUa-9G-aMn" firstAttribute="leading" secondItem="GAI-O2-lBb" secondAttribute="leading" id="6Lt-yp-Khc"/>
+                                    <constraint firstAttribute="trailing" secondItem="NUa-9G-aMn" secondAttribute="trailing" id="Dnq-GD-Apf"/>
+                                    <constraint firstItem="cLC-n8-SwQ" firstAttribute="leading" secondItem="GAI-O2-lBb" secondAttribute="leading" id="JIS-rb-4V1"/>
+                                    <constraint firstItem="cLC-n8-SwQ" firstAttribute="top" secondItem="NUa-9G-aMn" secondAttribute="bottom" constant="40" id="USr-01-9MA"/>
+                                    <constraint firstItem="NUa-9G-aMn" firstAttribute="top" secondItem="GAI-O2-lBb" secondAttribute="top" constant="40" id="ZbB-gJ-91S"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLC-n8-SwQ" secondAttribute="trailing" id="akX-qB-AiL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Ms-eB-U8o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GAI-O2-lBb" firstAttribute="top" secondItem="1Ms-eB-U8o" secondAttribute="top" id="0o9-IL-LJ9"/>
+                            <constraint firstItem="1Ms-eB-U8o" firstAttribute="trailing" secondItem="GAI-O2-lBb" secondAttribute="trailing" constant="40" id="Pq7-Aj-SPO"/>
+                            <constraint firstItem="1Ms-eB-U8o" firstAttribute="bottom" secondItem="GAI-O2-lBb" secondAttribute="bottom" id="U07-b9-isE"/>
+                            <constraint firstItem="GAI-O2-lBb" firstAttribute="leading" secondItem="1Ms-eB-U8o" secondAttribute="leading" constant="40" id="c4u-OS-aCR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AppReferenceID" destination="QRX-kM-Lzw" id="mCf-C4-AjD"/>
+                        <outlet property="KycID" destination="vbB-cd-gBM" id="AO8-2u-QzG"/>
+                        <outlet property="KycReferenceID" destination="HA4-Mu-ECd" id="PvG-hr-3BF"/>
+                        <outlet property="KycTitle" destination="NUa-9G-aMn" id="CC3-ke-aWO"/>
+                        <outlet property="PersonID" destination="45J-q4-C9i" id="qqb-wU-2oQ"/>
+                        <outlet property="ReferenceNumber" destination="UX3-V0-oqo" id="5tE-sO-XCn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeb-Km-aRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
