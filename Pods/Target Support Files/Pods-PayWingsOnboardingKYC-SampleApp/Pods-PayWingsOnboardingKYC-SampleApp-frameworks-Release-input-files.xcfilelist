@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh
-${BUILT_PRODUCTS_DIR}/InAppSettingsKit/InAppSettingsKit.framework
-${PODS_ROOT}/PayWingsOnboardingKYC/PayWingsOnboardingKYC.framework
-${PODS_ROOT}/VideoID/VideoID.framework.7.1.24/VideoID.framework
-${PODS_ROOT}/eIDWebRTC/WebRTC.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/IdensicMobileSDK/IdensicMobileSDK.framework/IdensicMobileSDK
