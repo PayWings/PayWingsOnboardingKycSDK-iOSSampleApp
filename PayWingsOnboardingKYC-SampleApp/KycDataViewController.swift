@@ -13,6 +13,8 @@ import PayWingsOnboardingKYC
 class KycDataViewController : UIViewController {
     
     
+    var result: PayWingsOnboardingKYC.SuccessEvent!
+    
     @IBOutlet weak var KycTitle: UILabel!
     
     @IBOutlet weak var AppReferenceID: KycTextLabel!
@@ -26,9 +28,7 @@ class KycDataViewController : UIViewController {
         super.viewDidLoad()
         
         self.title = "Sample App"
-        
         navigationItem.setHidesBackButton(true, animated: false)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Close", comment: ""), style: .plain, target: self, action: #selector(onClose))
         
         KycTitle.text = "KYC Successful"
         KycTitle.textColor = .systemGreen
@@ -43,20 +43,19 @@ class KycDataViewController : UIViewController {
     
     func setKycValues() {
         
-        AppReferenceID.text = "AppReferenceID: " + (KycResult.AppReferenceID ?? "")
-        ReferenceNumber.text = "ReferenceNumber: " + (KycResult.ReferenceNumber ?? "")
-        KycReferenceID.text = "KycReferenceID: " + (KycResult.KycReferenceID ?? "")
-        KycID.text = "KycID: " + (KycResult.KycID ?? "")
-        PersonID.text = "PersonID: " + (KycResult.PersonID ?? "")
+        AppReferenceID.text = "AppReferenceID: " + (result.AppReferenceID ?? "")
+        ReferenceNumber.text = "ReferenceNumber: " + (result.ReferenceNumber ?? "")
+        KycReferenceID.text = "KycReferenceID: " + (result.KycReferenceID ?? "")
+        KycID.text = "KycID: " + (result.KycID ?? "")
+        PersonID.text = "PersonID: " + (result.PersonID ?? "")
     }
     
     
-    @objc func onClose(_ sender: Any) {
-        showLoading(vc: self)
+    @IBAction func onClose(_ sender: Any) {
+        showLoading()
         
         self.navigationController?.popToRootViewController(animated: true)
     }
-    
     
     
 }

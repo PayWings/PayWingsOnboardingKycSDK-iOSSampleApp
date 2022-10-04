@@ -20,7 +20,7 @@ private enum PermissionType : String {
 
 class ViewController: UIViewController, IASKSettingsDelegate {
     
-    var latestSdkVersion = "v4.0.0"
+    var latestSdkVersion = "v5.0.0"
     
     @IBOutlet weak var sdkVersion: KycTextLabel!
     @IBOutlet weak var StartButton: UIButton!
@@ -28,6 +28,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     var credentials : KycCredentials?
     var settings : KycSettings?
     var userData : KycUserData?
+    var config : KycConfig?
     
     var kycStyle : String = "default"
     
@@ -93,7 +94,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     
     
     @IBAction func startKyc(_ sender: UIButton) {
-        showLoading(vc: self)
+        showLoading()
         checkCameraPermission()
     }
     
@@ -106,16 +107,9 @@ class ViewController: UIViewController, IASKSettingsDelegate {
             
             if cameraAuthorized && microphoneAuthorized {
                 
-                let initStoryboard = UIStoryboard(name: String(describing: LoadingViewController.self), bundle: nil)
-                let initVC = initStoryboard.instantiateViewController(withIdentifier: String(describing: LoadingViewController.self))
-                self.navigationController?.pushViewController(initVC, animated: true)
-
-                self.hideLoading(vc: self)
-                
-                let config = KycConfig(credentials: self.credentials!, settings: self.settings!, userData: self.userData)
-                let result = VerificationResult()
-
-                PayWingsOnboardingKyc.startKyc(vc: initVC, config: config, result: result)
+                self.config = KycConfig(credentials: self.credentials!, settings: self.settings!, userData: self.userData)
+                self.hideLoading()
+                self.performSegue(withIdentifier: "loading", sender: nil)
             }
         }
     }
@@ -148,9 +142,15 @@ class ViewController: UIViewController, IASKSettingsDelegate {
         let mobileNumber = UserDefaults.standard.string(forKey: "data_phone_number") ?? nil
 
         userData = KycUserData(firstName: firstName, middleName: middleName, lastName: lastName, address1: address1, address2: address2, address3: address3, zipCode: zipCode, city: city, state: state, countryCode: countryCode, email: email, mobileNumber: mobileNumber)
-        
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loading" {
+            guard let vc = segue.destination as? LoadingViewController else { return }
+            vc.config = config
+        }
+    }
     
 }
 
@@ -197,7 +197,7 @@ extension ViewController {
     }
 
     private func showPhoneSettings(type: String) {
-        hideLoading(vc: self)
+        hideLoading()
         let alertController = UIAlertController(title: NSLocalizedString("Permission Error", comment: ""), message: NSLocalizedString("Permission for ", comment: "") + NSLocalizedString(type, comment: "") + NSLocalizedString(" access denied, please allow our app permission through Settings in your phone if you want to use our service.", comment: ""), preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default))
         alertController.addAction(UIAlertAction(title: NSLocalizedString("Settings", comment: ""), style: .cancel) { _ in

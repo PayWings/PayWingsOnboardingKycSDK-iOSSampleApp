@@ -308,24 +308,24 @@ extension UIView {
 
 extension UIViewController {
     
-    func showLoading(vc: UIViewController) {
+    func showLoading() {
         
         let activityView = UIActivityIndicatorView()
         activityView.style = Style.Other.activityIndicatorStyle
         activityView.color = UIColor.label
-        activityView.center = vc.view.center
+        activityView.center = self.view.center
         activityView.tag = 0123
-        vc.view.addSubview(activityView)
+        self.view.addSubview(activityView)
         activityView.startAnimating()
         
-        vc.view.isUserInteractionEnabled = false
+        self.view.isUserInteractionEnabled = false
     }
     
-    func hideLoading(vc: UIViewController) {
-        if let activityView = vc.view.viewWithTag(0123) {
+    func hideLoading() {
+        if let activityView = self.view.viewWithTag(0123) {
             activityView.removeFromSuperview()
         }
-        vc.view.isUserInteractionEnabled = true
+        self.view.isUserInteractionEnabled = true
     }
     
     func transitionFromRightToLeft() {

@@ -13,6 +13,8 @@ import PayWingsOnboardingKYC
 class KycErrorViewController : UIViewController {
     
     
+    var result: PayWingsOnboardingKYC.ErrorEvent!
+    
     @IBOutlet weak var RestartKycButton: UIButton!
     
     @IBOutlet weak var AppReferenceID: KycTextLabel!
@@ -39,17 +41,17 @@ class KycErrorViewController : UIViewController {
     
     func setKycValues() {
         
-        AppReferenceID.text = "AppReferenceID: " + (KycResult.AppReferenceID ?? "")
-        ReferenceNumber.text = "ReferenceNumber: " + (KycResult.ReferenceNumber ?? "")
-        KycReferenceID.text = "KycReferenceID: " + (KycResult.KycReferenceID ?? "")
-        KycID.text = "KycID: " + (KycResult.KycID ?? "")
-        PersonID.text = "PersonID: " + (KycResult.PersonID ?? "")
-        ErrorDescription.text = "ErrorDescription: " + (KycResult.StatusDescription ?? "")
+        AppReferenceID.text = "AppReferenceID: " + (result.AppReferenceID ?? "")
+        ReferenceNumber.text = "ReferenceNumber: " + (result.ReferenceNumber ?? "")
+        KycReferenceID.text = "KycReferenceID: " + (result.KycReferenceID ?? "")
+        KycID.text = "KycID: " + (result.KycID ?? "")
+        PersonID.text = "PersonID: " + (result.PersonID ?? "")
+        ErrorDescription.text = "ErrorDescription: " + result.StatusDescription
     }
     
     
     @IBAction func onRestartKyc(_ sender: Any) {
-        showLoading(vc: self)
+        showLoading()
         
         self.navigationController?.popToRootViewController(animated: true)
     }
