@@ -1,5 +1,4 @@
-*.sh
 PayWingsOnboardingKYC-SampleApp.xcworkspace
 *.pbxproj
 Pods/
-
+Podfile.lock
