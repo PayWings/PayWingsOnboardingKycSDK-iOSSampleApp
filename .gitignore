@@ -1,0 +1,5 @@
+*.sh
+*.xcworkspace
+*.pbxproj
+Pods/
+PayWingsOnboardingKYC.framework/

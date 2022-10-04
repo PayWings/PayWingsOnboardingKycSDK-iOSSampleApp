@@ -21,6 +21,7 @@
 		3B5AD88524D1800800481052 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD87D24D1800800481052 /* Settings.bundle */; };
 		3BA9602125D5B0D8005B0B83 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA9602325D5B0D8005B0B83 /* Localizable.strings */; };
 		3BA9602925D5B201005B0B83 /* LocalizationCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */; };
+		3BF8071128ECDD40002A16D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3BF8071028ECDD40002A16D2 /* .gitignore */; };
 		7D2341FA42804F76D32CEF51 /* Pods_PayWingsOnboardingKYC_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F37406CAEFC3A8B98B785DB /* Pods_PayWingsOnboardingKYC_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		3BA9602525D5B0FE005B0B83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3BA9602625D5B109005B0B83 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationCustom.swift; sourceTree = "<group>"; };
+		3BF8071028ECDD40002A16D2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		625134F1835A0953A97D92CA /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 		3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				3BF8071028ECDD40002A16D2 /* .gitignore */,
 				3B5AD84924D17C4F00481052 /* Main.storyboard */,
 				3B5AD84724D17C4F00481052 /* ViewController.swift */,
 				3B5AD87924D1800700481052 /* LoadingViewController.swift */,
@@ -186,6 +189,7 @@
 				3B5AD85024D17C5300481052 /* LaunchScreen.storyboard in Resources */,
 				3BA9602125D5B0D8005B0B83 /* Localizable.strings in Resources */,
 				3B5AD84D24D17C5300481052 /* Assets.xcassets in Resources */,
+				3BF8071128ECDD40002A16D2 /* .gitignore in Resources */,
 				3B5AD84B24D17C4F00481052 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
