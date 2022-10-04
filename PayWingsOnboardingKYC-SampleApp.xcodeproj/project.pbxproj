@@ -66,6 +66,7 @@
 		3B5AD83724D17C4F00481052 = {
 			isa = PBXGroup;
 			children = (
+				3BF8071028ECDD40002A16D2 /* .gitignore */,
 				3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */,
 				3B5AD84124D17C4F00481052 /* Products */,
 				D40146CFC6E63CAA6F82A47F /* Pods */,
@@ -84,7 +85,6 @@
 		3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				3BF8071028ECDD40002A16D2 /* .gitignore */,
 				3B5AD84924D17C4F00481052 /* Main.storyboard */,
 				3B5AD84724D17C4F00481052 /* ViewController.swift */,
 				3B5AD87924D1800700481052 /* LoadingViewController.swift */,
