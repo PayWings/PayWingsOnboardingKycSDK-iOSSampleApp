@@ -1,0 +1,1712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1A2860D7D818D1793D0E8E2DEE323899 /* eIDWebRTC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 59732C5270EC0D6573C45C144F6139D2 /* Build configuration list for PBXAggregateTarget "eIDWebRTC" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = eIDWebRTC;
+		};
+		281E1088587AFF0FC97E6AF21BF3E705 /* PayWingsOnboardingKYC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 06DD6BAEBAD11F080BBC67879682F95B /* Build configuration list for PBXAggregateTarget "PayWingsOnboardingKYC" */;
+			buildPhases = (
+			);
+			dependencies = (
+				59AF7C4340209066EEC1D8573237AB9B /* PBXTargetDependency */,
+				188993F1E8B7785F6DCFCF1983F8093A /* PBXTargetDependency */,
+			);
+			name = PayWingsOnboardingKYC;
+		};
+		616893CC4A6A16338DE78B55D4D34738 /* IdensicMobileSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4E68C74C931C23AC435AEED43725503A /* Build configuration list for PBXAggregateTarget "IdensicMobileSDK" */;
+			buildPhases = (
+				22222650FABD153F9AA256FD9B971423 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = IdensicMobileSDK;
+		};
+		BDFDB56CB61C8A700E5CB485914CC788 /* VideoID */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC4E5E89FECE2790FCE8BED8A621E2D2 /* Build configuration list for PBXAggregateTarget "VideoID" */;
+			buildPhases = (
+				5E9FD3F3891AF191A74E1C6A90301C3B /* [CP] Copy dSYMs */,
+			);
+			dependencies = (
+				0F6C149797079C98D5DAA6CF19379E05 /* PBXTargetDependency */,
+			);
+			name = VideoID;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03AA13CE091E14588E9E6A8CB1BB6CE5 /* EmailViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = B2AA7FA626FCE5959C030CCBCBE47C62 /* EmailViewController.storyboardc */; };
+		06783E10D818DD4F55396613748A31AC /* IASKSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D70435F42B1C10FD801035F2FDFACB /* IASKSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A406F2EB21CAB632047E717C375A40 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5D46822DACFBD318F981AED1B2E3E /* IASKPSSliderSpecifierViewCell.m */; };
+		0FCA39C6265C9C0FECF42394D5221366 /* IASKDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8660A708C84C37A1708DFDC43DB6401A /* IASKDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		100B82CDA344F9B9585027C3D560C1C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772245828F0E506C859B7A962DC70C92 /* Foundation.framework */; };
+		10F4EE06070316AE19B98451A6FDE961 /* IASKAppSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A7D45B4CE6DBB0D75758B775449431 /* IASKAppSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11A4F5EDF7A384DEB8A8230D8D8AAC4A /* VideoFailedRepeatViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = A5E8EEF7C52700B795133093AD7D2116 /* VideoFailedRepeatViewController.storyboardc */; };
+		16D47F90B7E777AB56099D8F9D9E620A /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F3D61F29A811065219541151FC71ED1D /* es.lproj */; };
+		1DCDF597266DBE3E35B912CFBB3A07B0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E218635B62BFBD9D6E78E4C2164F0717 /* MessageUI.framework */; };
+		214A98AA73A18026C698F2634F150170 /* ConfirmCancelKycViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 12C385FC29F5D5E588AEE8B6181AF7B1 /* ConfirmCancelKycViewController.storyboardc */; };
+		22246678D6BFEFD908628E9BA06E86C2 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8D1598D9ED02964EF1FEF060D4DE5C /* IASKMultipleValueSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2464477685A9A990543D68AD67153F25 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 939599DA39F7A37A28D2DD4A20CA602C /* PhoneNumberMetadata.json */; };
+		25D6C0AB1CDE0A59BE06172C5C6084A1 /* AdditionalDocumentsViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 65AC0FA8D514C1A2B17530D70D8BFCB7 /* AdditionalDocumentsViewController.storyboardc */; };
+		26DD73425B8923480FBEBA566380AEC0 /* IASKPSTextFieldSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E17AAC5F89F85785EA75000C5F6056C /* IASKPSTextFieldSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2958944C87E67EF21E47532BA0A2CF23 /* PhoneVerificationViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 9E170C8CF167E704D40855FF34B54709 /* PhoneVerificationViewController.storyboardc */; };
+		29FA9C22EA3A04BA09374E711913627E /* PersonalInfoViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 3BECE8A92A0C38B5B90D2688C5DAC1AF /* PersonalInfoViewController.storyboardc */; };
+		2AE14441A6FA3C1B0683BDF26DCC920D /* CountryPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0C3492295151F1C9BFC4E1DB669D43B /* CountryPickerView.bundle */; };
+		2F11FDAC523D9E0E0F3EA3EA69AD4D22 /* Pods-PayWingsOnboardingKYC-SampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A266C4E2BC48D168ADB2697C08C96B1C /* Pods-PayWingsOnboardingKYC-SampleApp-dummy.m */; };
+		31C32BF353D8C8BEDC6E96FFC36F3320 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B0CCBE7570CAAC1F23AB4F0D7BD942 /* IASKSpecifierValuesViewController.m */; };
+		35952D2FB039FBB5E41EAA5455F79A60 /* IASKPSSliderSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 25580992DFDA3529E20FF13452D9F343 /* IASKPSSliderSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		363E73CA6B4F49E0332F22B3BC0A9756 /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B399E64DC9998632FE29684FD1B881 /* IASKSettingsReader.m */; };
+		3961D2632AD190A3BAA87AE5B511DA2E /* PhoneConfirmCodeViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = F81382DD075B4DCFF68AADE0AC7F8039 /* PhoneConfirmCodeViewController.storyboardc */; };
+		3A683C824FE98988BFF39538CED3726A /* ja-JP.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BF4E2D6A6FDF21A3E32FD6CB104DBC1E /* ja-JP.lproj */; };
+		3E6BA8025806D3741978ABF3CBE90F97 /* IASKTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A52FF090A64DBD95D425FC409784D7 /* IASKTextViewCell.m */; };
+		3EE300C93D626B09D885507944F1C9A8 /* IASKEmbeddedDatePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CED6B9D0A1C9F7CA5AE64D6C57D5C /* IASKEmbeddedDatePickerViewCell.m */; };
+		42CAE91F642FD70B53A51B6247942DD5 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 42302859F62C6BC03FB63111D86B9855 /* de.lproj */; };
+		44826469D5B69B327E161017A6C1DF3D /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F421A0C034192B7DA0855590B75FAFAA /* IASKSettingsStoreFile.m */; };
+		470A44AF9525AF0A73949E703ACB8249 /* IASKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F5063DC5B1E86A6FDC61314FAF92BB03 /* IASKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A28E0398EA756D6D15B1654332457C1 /* IASKDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7E4D7B1D41CBD33FD639B2025FEF17 /* IASKDatePicker.m */; };
+		4BE87E33D2A0836C8055FE87CEEFE97A /* LoadingViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = D4C149D219BB1E4BCDD32CA84805B354 /* LoadingViewController.storyboardc */; };
+		52452C5F421431AB3A866F5DD7BE5A1A /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F939CE7CC6BBBC4B68920A0B6758B61C /* zh-Hant.lproj */; };
+		56CD658632C3A225B9B34A5C7310ACAA /* AdditionalDocumentWithSubtypesViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = A17A76381868F4D579E42EA0E8E154FF /* AdditionalDocumentWithSubtypesViewController.storyboardc */; };
+		583CA41AFEC7146CB6CCB91B869DA532 /* IASKDatePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C843BA13562660A15842A4D9A9E67F97 /* IASKDatePickerViewCell.m */; };
+		5D80AFF3D4768184F4BC6DC3382E459D /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7A6FE4C72A1D458D0F6DB01E64E4AB49 /* ru.lproj */; };
+		5DB6A37F0C1F47563F54AA64047460B7 /* IASKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F32E6F320EE573FF7DB5DE313A7B16 /* IASKColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F927C0DF88B98A51561104DBBAC24FA /* CountryPickerView.nib in Resources */ = {isa = PBXBuildFile; fileRef = B9A8E2D3235760B062E351DDDD905E28 /* CountryPickerView.nib */; };
+		610E20924EDBC3B2D974B121C0A520AE /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B51D7EA0ECAA799A69675D136E6C30FC /* IASKTextField.m */; };
+		644A62243B3C88B5149C8432E190A794 /* AdditionalDocumentWithSubtypePreview.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 29A66F8C94D5BFD4B60FB5EBA7B4BE84 /* AdditionalDocumentWithSubtypePreview.storyboardc */; };
+		6BD181A46454A23E51810A23010DB303 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0E9B73BE6986CD645484D24608332F38 /* en.lproj */; };
+		6CC5B078C9B7427F40D98CDF712C1095 /* ResidentialAddressViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = B17E64F1E7BF866D8F7704BB8C2330E2 /* ResidentialAddressViewController.storyboardc */; };
+		70574F2589278B73EC84F1A9D2F1F600 /* es-MX.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 910C8B5A85DDE8C783054303EDF3ED64 /* es-MX.lproj */; };
+		70A5A1219EAA8D1F81684F82876CB853 /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CC2AE014AACC28F7EB4A5A704E568D /* IASKSettingsStore.m */; };
+		75E1B2CC3E0353F25776C9C34C6287DF /* VideoViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = A5BEE8E132CC7BDEFBFA25AC2C65B791 /* VideoViewController.storyboardc */; };
+		76084D8DA7223FA7BBD71B9F4F320A5C /* InAppSettingsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F4707B0FB65F27DEB5210935E2C21E /* InAppSettingsKit-dummy.m */; };
+		7967574DDCB8E92EFBE116C391A08FD5 /* IASKSettingsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CCED6E5B68D487DDDDB5AA70018CB28 /* IASKSettingsReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AD887620833E9534FE67D1BE50C21F7 /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B16A964C9C0317498577383406FE7F /* IASKTextView.m */; };
+		7B53C889B89484A7E3956B378DC983B8 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2BB888E7A7E57B4B93977FF49441FA65 /* fr.lproj */; };
+		7C548ED9F25DA2C3F8A06846A120F15F /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 22FE3FE771573578E8CD1A7C7A08AD90 /* en.lproj */; };
+		7DFFDE216A29C84367A1FF25C8C3997A /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51190F947543DC982B0A1159B73E4A4E /* IASKPSTextFieldSpecifierViewCell.m */; };
+		806CFA649ED3C02F884DBCEC00EE4A53 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF0DD49A955DC1E552F5EC84DCBD8586 /* it.lproj */; };
+		8247CD036E9357ABB61B71EBBDDB0655 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3EF309EE2B43FAD195244E3C41F9E8F3 /* tr.lproj */; };
+		82E4DAF0B9DA32B4450BA62EEFD80BF8 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B33AC8C1A05CCB09104F37022F434903 /* nl.lproj */; };
+		84D70050A93459D087AA397DC4F344D1 /* ChooseDocumentViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = 0E60F11766525B70C6C633C6DC234A31 /* ChooseDocumentViewController.storyboardc */; };
+		84EE34A93313D5FC758FEF65100B8A8F /* IASKSettingsStoreFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A93D7E0A9C804197C3CD8007836014 /* IASKSettingsStoreFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84F29D83829866314676EF6D4B7D681B /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 817B5BF010BCCAA7A2D0D6FCF2DDF087 /* pt.lproj */; };
+		8598AE5A929E0BC306DC2FCD1B4B594F /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E40E55CE2D51F7AEAC3FA46EE6D760 /* IASKSlider.m */; };
+		8952F30F97704903AC091ABBB398766D /* IASKSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 006B1B2925733E7A5D91F8CC59A5F802 /* IASKSettingsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89DC6976C70233F2D93CDB7ECF9E736A /* PhoneNumberMetadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2F13565CF70E23ACC001D13DAABEDB59 /* PhoneNumberMetadata.xml */; };
+		8BE3EF7AE8541ABEFDD8ACF4628DA7A7 /* IASKSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DEB0176A11133882A0698585BD2528B /* IASKSpecifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		990E6CFA4E3A80697F5040B493499F0F /* IASKSettingsStoreInMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A950E167A3F366EA3628A360F912D6 /* IASKSettingsStoreInMemory.m */; };
+		9D80DA46196D13C871FDC8C7ACDE1931 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 02233ACB409470024DA335CB1384C01D /* IASKMultipleValueSelection.m */; };
+		A4005F599B6BAE342AD95A8280022A9C /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF11C405047A22870A3D657DF0EE349 /* IASKSwitch.m */; };
+		A41EDD51E522ED8FDF799A8F4F0D402B /* pt-PT.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B6582A36A2118DFBA6A2CA2846ABB601 /* pt-PT.lproj */; };
+		A62F819B4F4D3E41FB188E1C9746D97F /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9563C57CC44E4384F7E8965EB74D76F /* IASKAppSettingsWebViewController.m */; };
+		ABD9BC4C3F862CC706CDB15C5CB15458 /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A9EE0453A0E0976DB8648A3FDF315477 /* th.lproj */; };
+		AF29550F394BCD6704DFD39D63B9DF42 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B19CC421C763AF94C5E68980A6205E /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFE5C9A5AF5B19703C9EE7265BE99011 /* InAppSettingsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BBCE2735877E4E94CFE3F8CBCC087A /* InAppSettingsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B102ACF430EFB372D27237860698BE2C /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A778DAADF6705C29498D35513F696722 /* nb.lproj */; };
+		B3D4A9E580BF924BDAED9C719089E8F3 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0D6DB76F0762595EAF599751624A03 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5BC0773EF63BEDC7196F56A67AAF685 /* IASKSpecifierValuesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B04835FBCAB3A35339DD5EB9465CC6CD /* IASKSpecifierValuesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60A3816A5AFA78ED6F882AD9F84E207 /* IASKDatePickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC7BD37A1B5CF84B3FBF1166DDE5626 /* IASKDatePickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B808315D6E11D555A84514CB05150183 /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DD44BEA1C8084524FAF400855BFDCCC0 /* IASKSettingsStoreUserDefaults.m */; };
+		BC0656D141361D73315918D921BB767B /* IASKSettingsStoreInMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = E90FDA76E12EB047DDC44AF924DFFB91 /* IASKSettingsStoreInMemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE459D3374C6338263C124A6F56490DD /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 98BD452D07BC517B73924BDA9D2E8A03 /* uk.lproj */; };
+		BFC45B8A130718FC2E15F7C2A1C051E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FE240B361E9690F32BB2A46A68AF89 /* UIKit.framework */; };
+		C38E36358823837C1B6F605A6ADCF812 /* IASKSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = DD705051BBF5FEE322F726B8659D80EF /* IASKSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAEEDC4C988110A41AA1B8CE11ECFB5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772245828F0E506C859B7A962DC70C92 /* Foundation.framework */; };
+		CB1952F58482856D5E1740DA7829C7BA /* es-419.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BA14C494DB26606CD8871857EAE5E0F5 /* es-419.lproj */; };
+		CBE4558B24AE8DB83FCFE4D063D9B70E /* IASKEmbeddedDatePickerViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF98BA6E1DB65E0734B8E38F873BC2F /* IASKEmbeddedDatePickerViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1892A17A32328F06501050F1B068C09 /* IASKSettingsStoreUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = B6518C65DD746BF8F55376A99862785E /* IASKSettingsStoreUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D37FFB0FEE0925059D26F6BF58F86A35 /* hr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 202E557C8317132DADFF72D689FC9F6E /* hr.lproj */; };
+		D7A788486488E74F1B8484F812211DF7 /* AdditionalDocumentCameraViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = E40108EC320609A20F38804EBFA9DFF4 /* AdditionalDocumentCameraViewController.storyboardc */; };
+		D887E63C26A45FF4AAF63D96E58C7477 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2FC2455A19C1985B24B7BBBA8B7B4430 /* pl.lproj */; };
+		D8CA0AF69D36C2939AACCE437AF63F0B /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C45656A33865217622BB1ABCA5099CA0 /* hu.lproj */; };
+		D9B9A57B1DEDA43836EEC5F792DA4FC6 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E8ACA2028F7CCAFFC1704CE32E8C4833 /* zh-Hans.lproj */; };
+		DAE0BBF5FBC5F86ED184F2931CDE0CC5 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 43BD416CC6D3410DCC0B6A3F0773C6D1 /* ja.lproj */; };
+		DB287EDE377811F63E0D6426B34562EF /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E6AA914C26F2D977823D83F8B2C645 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC503B1A01DF4F5F07B18DF95DB90223 /* Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0D52B7BB6431CC57F961DC22E9AE04 /* Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC710F2ACFD4F401BE1CFB41C9417E8E /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C0EBD2DF1686090D1F1BF9A5C983BF3E /* ca.lproj */; };
+		E1C1B213E1E134DF16CF89F9F6683A32 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F40DE85340372BE3A2F66B2CC7F90F42 /* Base.lproj */; };
+		E2789F40045DE25B8A47354D0DA09D98 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE16AA9B1DBFA05F1DF7745BBEA0D6E /* IASKAppSettingsViewController.m */; };
+		E6BF6D6867D98EA1ECCAF338097646DD /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6E0AEEDCBC8BBE96BB89EA2EFE946715 /* sv.lproj */; };
+		E974B2B1F117A084FB85C65ADEC80D11 /* IASKAppSettingsWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F7252A259A1B17854E9CC578E9CBB745 /* IASKAppSettingsWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB03558D945C96AFFB7AB2CFF9237885 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7008329A51BFFC7522129C331B3E396C /* zh-Hans.lproj */; };
+		EE2BD566C94ABC201D6411258D7ACEF7 /* ReferenceNumberViewController.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = E89B497F0D885683F766A72F428148BA /* ReferenceNumberViewController.storyboardc */; };
+		F398DE4AE72D27B74A7EF14F0C10094B /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3F69A839857ED1A00E85DB86D61DA097 /* zh-Hant.lproj */; };
+		FBF2BB4888BC4CD33C0724763877A5C0 /* AdditionalDocumentCell.nib in Resources */ = {isa = PBXBuildFile; fileRef = 31055A19D1053769AB15095D8CC7B7C8 /* AdditionalDocumentCell.nib */; };
+		FF3D4B4390CD54DBE022DBBA3C76F5EC /* InAppSettingsKit-InAppSettingsKit in Resources */ = {isa = PBXBuildFile; fileRef = 325E862631E06444E4504511C87F1E9C /* InAppSettingsKit-InAppSettingsKit */; };
+		FF56CCA4382BC30A0D803C50707FC681 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = D749FAD234BBAB5FBF272B2F79C4E267 /* IASKSpecifier.m */; };
+		FFE3020CCD62A98E6E3689A170075904 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0E65DAE32347200A9CE23A592B54CD1 /* el.lproj */; };
+		FFFCDC61D302B4A7F5FCE0AA1A09B641 /* IASKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE6282D687768184D699FE03DF0C1E7 /* IASKColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14656BFB8BD01056B1809F402A632076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A996938DFC560C0A3EF0DD6CA6B032A;
+			remoteInfo = "InAppSettingsKit-InAppSettingsKit";
+		};
+		200CEAD08BF11B166B94D1A820665F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFDB56CB61C8A700E5CB485914CC788;
+			remoteInfo = VideoID;
+		};
+		299507415E0F8FEBCD426294B051F01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2860D7D818D1793D0E8E2DEE323899;
+			remoteInfo = eIDWebRTC;
+		};
+		41BABEF9E11715DACB823FC55FEC98CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281E1088587AFF0FC97E6AF21BF3E705;
+			remoteInfo = PayWingsOnboardingKYC;
+		};
+		A376D4E94397B495B32C60A8FA1BF9DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2860D7D818D1793D0E8E2DEE323899;
+			remoteInfo = eIDWebRTC;
+		};
+		A97BAFE503F2353E150A9827D22D47BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B4848122435F4C22D574A5DA6D2EFB3;
+			remoteInfo = InAppSettingsKit;
+		};
+		AFA4EBB39B320B4D3D8E33E2ECA0A164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616893CC4A6A16338DE78B55D4D34738;
+			remoteInfo = IdensicMobileSDK;
+		};
+		DBF3D220711B53AD1DB3AE83BFCA6889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFDB56CB61C8A700E5CB485914CC788;
+			remoteInfo = VideoID;
+		};
+		FDB62CEFB46E9D0050543CAD0F040522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01741109F700A5BAC5B9084C7BDD39D4;
+			remoteInfo = "PayWingsOnboardingKYC-PayWingsOnboardingKYC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006B1B2925733E7A5D91F8CC59A5F802 /* IASKSettingsStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStore.h; path = InAppSettingsKit/Models/IASKSettingsStore.h; sourceTree = "<group>"; };
+		02233ACB409470024DA335CB1384C01D /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKMultipleValueSelection.m; path = InAppSettingsKit/Controllers/IASKMultipleValueSelection.m; sourceTree = "<group>"; };
+		06F32E6F320EE573FF7DB5DE313A7B16 /* IASKColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKColor.h; path = InAppSettingsKit/Views/IASKColor.h; sourceTree = "<group>"; };
+		08AFEBA3BAAEE2749BC98415A82A5824 /* IdensicMobileSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IdensicMobileSDK.debug.xcconfig; sourceTree = "<group>"; };
+		0B6FE81BE3B0AD57009BFF0CB549D84A /* IdensicMobileSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IdensicMobileSDK.release.xcconfig; sourceTree = "<group>"; };
+		0CCED6E5B68D487DDDDB5AA70018CB28 /* IASKSettingsReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsReader.h; path = InAppSettingsKit/Models/IASKSettingsReader.h; sourceTree = "<group>"; };
+		0E60F11766525B70C6C633C6DC234A31 /* ChooseDocumentViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = ChooseDocumentViewController.storyboardc; path = PayWingsOnboardingKYC.framework/ChooseDocumentViewController.storyboardc; sourceTree = "<group>"; };
+		0E9B73BE6986CD645484D24608332F38 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = InAppSettingsKit/Resources/en.lproj; sourceTree = "<group>"; };
+		0FCC06C9676288AABA136424A68BC3AE /* Pods-PayWingsOnboardingKYC-SampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayWingsOnboardingKYC-SampleApp-Info.plist"; sourceTree = "<group>"; };
+		109A792D72C88C45A108A5C71DE6AC7E /* InAppSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InAppSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		12C385FC29F5D5E588AEE8B6181AF7B1 /* ConfirmCancelKycViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = ConfirmCancelKycViewController.storyboardc; path = PayWingsOnboardingKYC.framework/ConfirmCancelKycViewController.storyboardc; sourceTree = "<group>"; };
+		16E927F28E5B91EC0D1A91600132163D /* ResourceBundle-PayWingsOnboardingKYC-PayWingsOnboardingKYC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PayWingsOnboardingKYC-PayWingsOnboardingKYC-Info.plist"; sourceTree = "<group>"; };
+		202E557C8317132DADFF72D689FC9F6E /* hr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hr.lproj; path = InAppSettingsKit/Resources/hr.lproj; sourceTree = "<group>"; };
+		22FE3FE771573578E8CD1A7C7A08AD90 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = PayWingsOnboardingKYC.framework/en.lproj; sourceTree = "<group>"; };
+		25580992DFDA3529E20FF13452D9F343 /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKPSSliderSpecifierViewCell.h; path = InAppSettingsKit/Views/IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		26DDA8E8415C19D0C44C77B3334F1735 /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		26E40E55CE2D51F7AEAC3FA46EE6D760 /* IASKSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSlider.m; path = InAppSettingsKit/Views/IASKSlider.m; sourceTree = "<group>"; };
+		29A66F8C94D5BFD4B60FB5EBA7B4BE84 /* AdditionalDocumentWithSubtypePreview.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = AdditionalDocumentWithSubtypePreview.storyboardc; path = PayWingsOnboardingKYC.framework/AdditionalDocumentWithSubtypePreview.storyboardc; sourceTree = "<group>"; };
+		2BB888E7A7E57B4B93977FF49441FA65 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = InAppSettingsKit/Resources/fr.lproj; sourceTree = "<group>"; };
+		2F13565CF70E23ACC001D13DAABEDB59 /* PhoneNumberMetadata.xml */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.xml; path = PayWingsOnboardingKYC.framework/PhoneNumberMetadata.xml; sourceTree = "<group>"; };
+		2FC2455A19C1985B24B7BBBA8B7B4430 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = InAppSettingsKit/Resources/pl.lproj; sourceTree = "<group>"; };
+		31055A19D1053769AB15095D8CC7B7C8 /* AdditionalDocumentCell.nib */ = {isa = PBXFileReference; includeInIndex = 1; name = AdditionalDocumentCell.nib; path = PayWingsOnboardingKYC.framework/AdditionalDocumentCell.nib; sourceTree = "<group>"; };
+		325E862631E06444E4504511C87F1E9C /* InAppSettingsKit-InAppSettingsKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "InAppSettingsKit-InAppSettingsKit"; path = InAppSettingsKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		372BFDC5FB2DA8D814C2F9E51F95A101 /* Pods-PayWingsOnboardingKYC-SampleApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayWingsOnboardingKYC-SampleApp-resources.sh"; sourceTree = "<group>"; };
+		3A13C1017EEF2D63D30F1B0578F44205 /* Pods-PayWingsOnboardingKYC-SampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PayWingsOnboardingKYC-SampleApp.modulemap"; sourceTree = "<group>"; };
+		3B16C15DFB39DE8BD39892618E747F7F /* PayWingsOnboardingKYC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWingsOnboardingKYC.release.xcconfig; sourceTree = "<group>"; };
+		3BECE8A92A0C38B5B90D2688C5DAC1AF /* PersonalInfoViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = PersonalInfoViewController.storyboardc; path = PayWingsOnboardingKYC.framework/PersonalInfoViewController.storyboardc; sourceTree = "<group>"; };
+		3EF309EE2B43FAD195244E3C41F9E8F3 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = InAppSettingsKit/Resources/tr.lproj; sourceTree = "<group>"; };
+		3F69A839857ED1A00E85DB86D61DA097 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "PayWingsOnboardingKYC.framework/zh-Hant.lproj"; sourceTree = "<group>"; };
+		41F4707B0FB65F27DEB5210935E2C21E /* InAppSettingsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InAppSettingsKit-dummy.m"; sourceTree = "<group>"; };
+		42302859F62C6BC03FB63111D86B9855 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = InAppSettingsKit/Resources/de.lproj; sourceTree = "<group>"; };
+		43BD416CC6D3410DCC0B6A3F0773C6D1 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = InAppSettingsKit/Resources/ja.lproj; sourceTree = "<group>"; };
+		4B8D1598D9ED02964EF1FEF060D4DE5C /* IASKMultipleValueSelection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKMultipleValueSelection.h; path = InAppSettingsKit/Controllers/IASKMultipleValueSelection.h; sourceTree = "<group>"; };
+		4BC7BD37A1B5CF84B3FBF1166DDE5626 /* IASKDatePickerViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKDatePickerViewCell.h; path = InAppSettingsKit/Views/IASKDatePickerViewCell.h; sourceTree = "<group>"; };
+		4CF8C1B12A490AE4E566F2B0625F3EC2 /* VideoID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoID.debug.xcconfig; sourceTree = "<group>"; };
+		4D0D52B7BB6431CC57F961DC22E9AE04 /* Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h"; sourceTree = "<group>"; };
+		4E17AAC5F89F85785EA75000C5F6056C /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKPSTextFieldSpecifierViewCell.h; path = InAppSettingsKit/Views/IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		51190F947543DC982B0A1159B73E4A4E /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKPSTextFieldSpecifierViewCell.m; path = InAppSettingsKit/Views/IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		51BBCE2735877E4E94CFE3F8CBCC087A /* InAppSettingsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InAppSettingsKit-umbrella.h"; sourceTree = "<group>"; };
+		522BA11990400CE1FD741E03F9A1B70E /* VideoID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoID.framework; path = VideoID.framework.7.1.24/VideoID.framework; sourceTree = "<group>"; };
+		53C03EBA2A7419C6ED9017F06A200E21 /* VideoID-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "VideoID-copy-dsyms.sh"; sourceTree = "<group>"; };
+		57B0CCBE7570CAAC1F23AB4F0D7BD942 /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifierValuesViewController.m; path = InAppSettingsKit/Controllers/IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		5CD5D46822DACFBD318F981AED1B2E3E /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKPSSliderSpecifierViewCell.m; path = InAppSettingsKit/Views/IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		5F44F6DD485E587D13CA49C569A05355 /* ResourceBundle-InAppSettingsKit-InAppSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-InAppSettingsKit-InAppSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		612A24BD8D7362460BCEC00E7A627E76 /* eIDWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = eIDWebRTC.debug.xcconfig; sourceTree = "<group>"; };
+		627EC086B63E262C52B3A87A5667CECD /* PayWingsOnboardingKYC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayWingsOnboardingKYC.framework; sourceTree = "<group>"; };
+		62A7D45B4CE6DBB0D75758B775449431 /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsViewController.h; path = InAppSettingsKit/Controllers/IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		65AC0FA8D514C1A2B17530D70D8BFCB7 /* AdditionalDocumentsViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = AdditionalDocumentsViewController.storyboardc; path = PayWingsOnboardingKYC.framework/AdditionalDocumentsViewController.storyboardc; sourceTree = "<group>"; };
+		67A52FF090A64DBD95D425FC409784D7 /* IASKTextViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextViewCell.m; path = InAppSettingsKit/Views/IASKTextViewCell.m; sourceTree = "<group>"; };
+		68D607FBBDA120559EFB8F25801A9C63 /* PayWingsOnboardingKYC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWingsOnboardingKYC.debug.xcconfig; sourceTree = "<group>"; };
+		6DEB0176A11133882A0698585BD2528B /* IASKSpecifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSpecifier.h; path = InAppSettingsKit/Models/IASKSpecifier.h; sourceTree = "<group>"; };
+		6E0AEEDCBC8BBE96BB89EA2EFE946715 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = InAppSettingsKit/Resources/sv.lproj; sourceTree = "<group>"; };
+		7008329A51BFFC7522129C331B3E396C /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "PayWingsOnboardingKYC.framework/zh-Hans.lproj"; sourceTree = "<group>"; };
+		70D70435F42B1C10FD801035F2FDFACB /* IASKSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSwitch.h; path = InAppSettingsKit/Views/IASKSwitch.h; sourceTree = "<group>"; };
+		72F864E9AC8567ED5785AAFF026D1E1F /* InAppSettingsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InAppSettingsKit-prefix.pch"; sourceTree = "<group>"; };
+		76BB4EA4EEAFCEE700F1AC9178ED4E2B /* InAppSettingsKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InAppSettingsKit.release.xcconfig; sourceTree = "<group>"; };
+		772245828F0E506C859B7A962DC70C92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A556FCDF2702CE533E5D33C81F0658F /* eIDWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = eIDWebRTC.release.xcconfig; sourceTree = "<group>"; };
+		7A6FE4C72A1D458D0F6DB01E64E4AB49 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = InAppSettingsKit/Resources/ru.lproj; sourceTree = "<group>"; };
+		7BF11C405047A22870A3D657DF0EE349 /* IASKSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSwitch.m; path = InAppSettingsKit/Views/IASKSwitch.m; sourceTree = "<group>"; };
+		80CC2AE014AACC28F7EB4A5A704E568D /* IASKSettingsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStore.m; path = InAppSettingsKit/Models/IASKSettingsStore.m; sourceTree = "<group>"; };
+		817B5BF010BCCAA7A2D0D6FCF2DDF087 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = InAppSettingsKit/Resources/pt.lproj; sourceTree = "<group>"; };
+		8660A708C84C37A1708DFDC43DB6401A /* IASKDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKDatePicker.h; path = InAppSettingsKit/Views/IASKDatePicker.h; sourceTree = "<group>"; };
+		88B16A964C9C0317498577383406FE7F /* IASKTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextView.m; path = InAppSettingsKit/Views/IASKTextView.m; sourceTree = "<group>"; };
+		88B399E64DC9998632FE29684FD1B881 /* IASKSettingsReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsReader.m; path = InAppSettingsKit/Models/IASKSettingsReader.m; sourceTree = "<group>"; };
+		8DF98BA6E1DB65E0734B8E38F873BC2F /* IASKEmbeddedDatePickerViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKEmbeddedDatePickerViewCell.h; path = InAppSettingsKit/Views/IASKEmbeddedDatePickerViewCell.h; sourceTree = "<group>"; };
+		910C8B5A85DDE8C783054303EDF3ED64 /* es-MX.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-MX.lproj"; path = "InAppSettingsKit/Resources/es-MX.lproj"; sourceTree = "<group>"; };
+		939599DA39F7A37A28D2DD4A20CA602C /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.json; path = PayWingsOnboardingKYC.framework/PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		9816150B5D5D782BAAF897AE87F636E5 /* PayWingsOnboardingKYC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PayWingsOnboardingKYC.h; path = PayWingsOnboardingKYC.framework/Headers/PayWingsOnboardingKYC.h; sourceTree = "<group>"; };
+		98BD452D07BC517B73924BDA9D2E8A03 /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = uk.lproj; path = InAppSettingsKit/Resources/uk.lproj; sourceTree = "<group>"; };
+		9C1CED6B9D0A1C9F7CA5AE64D6C57D5C /* IASKEmbeddedDatePickerViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKEmbeddedDatePickerViewCell.m; path = InAppSettingsKit/Views/IASKEmbeddedDatePickerViewCell.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E170C8CF167E704D40855FF34B54709 /* PhoneVerificationViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneVerificationViewController.storyboardc; path = PayWingsOnboardingKYC.framework/PhoneVerificationViewController.storyboardc; sourceTree = "<group>"; };
+		A17A76381868F4D579E42EA0E8E154FF /* AdditionalDocumentWithSubtypesViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = AdditionalDocumentWithSubtypesViewController.storyboardc; path = PayWingsOnboardingKYC.framework/AdditionalDocumentWithSubtypesViewController.storyboardc; sourceTree = "<group>"; };
+		A266C4E2BC48D168ADB2697C08C96B1C /* Pods-PayWingsOnboardingKYC-SampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayWingsOnboardingKYC-SampleApp-dummy.m"; sourceTree = "<group>"; };
+		A5BEE8E132CC7BDEFBFA25AC2C65B791 /* VideoViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = VideoViewController.storyboardc; path = PayWingsOnboardingKYC.framework/VideoViewController.storyboardc; sourceTree = "<group>"; };
+		A5E8EEF7C52700B795133093AD7D2116 /* VideoFailedRepeatViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = VideoFailedRepeatViewController.storyboardc; path = PayWingsOnboardingKYC.framework/VideoFailedRepeatViewController.storyboardc; sourceTree = "<group>"; };
+		A6A950E167A3F366EA3628A360F912D6 /* IASKSettingsStoreInMemory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreInMemory.m; path = InAppSettingsKit/Models/IASKSettingsStoreInMemory.m; sourceTree = "<group>"; };
+		A778DAADF6705C29498D35513F696722 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nb.lproj; path = InAppSettingsKit/Resources/nb.lproj; sourceTree = "<group>"; };
+		A8D28E01267F8CB93303EBFDE7CEE9DF /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A9EE0453A0E0976DB8648A3FDF315477 /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = th.lproj; path = InAppSettingsKit/Resources/th.lproj; sourceTree = "<group>"; };
+		AAE16AA9B1DBFA05F1DF7745BBEA0D6E /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsViewController.m; path = InAppSettingsKit/Controllers/IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		B04835FBCAB3A35339DD5EB9465CC6CD /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSpecifierValuesViewController.h; path = InAppSettingsKit/Controllers/IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		B0C3492295151F1C9BFC4E1DB669D43B /* CountryPickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CountryPickerView.bundle; path = PayWingsOnboardingKYC.framework/CountryPickerView.bundle; sourceTree = "<group>"; };
+		B17E64F1E7BF866D8F7704BB8C2330E2 /* ResidentialAddressViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = ResidentialAddressViewController.storyboardc; path = PayWingsOnboardingKYC.framework/ResidentialAddressViewController.storyboardc; sourceTree = "<group>"; };
+		B2AA7FA626FCE5959C030CCBCBE47C62 /* EmailViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = EmailViewController.storyboardc; path = PayWingsOnboardingKYC.framework/EmailViewController.storyboardc; sourceTree = "<group>"; };
+		B33AC8C1A05CCB09104F37022F434903 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = InAppSettingsKit/Resources/nl.lproj; sourceTree = "<group>"; };
+		B51D7EA0ECAA799A69675D136E6C30FC /* IASKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextField.m; path = InAppSettingsKit/Views/IASKTextField.m; sourceTree = "<group>"; };
+		B6518C65DD746BF8F55376A99862785E /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreUserDefaults.h; path = InAppSettingsKit/Models/IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		B6582A36A2118DFBA6A2CA2846ABB601 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "pt-PT.lproj"; path = "InAppSettingsKit/Resources/pt-PT.lproj"; sourceTree = "<group>"; };
+		B9A8E2D3235760B062E351DDDD905E28 /* CountryPickerView.nib */ = {isa = PBXFileReference; includeInIndex = 1; name = CountryPickerView.nib; path = PayWingsOnboardingKYC.framework/CountryPickerView.nib; sourceTree = "<group>"; };
+		BA11CDDAD3A5073D33B35C0C6ACE04BB /* PayWingsOnboardingKYC-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PayWingsOnboardingKYC-Swift.h"; path = "PayWingsOnboardingKYC.framework/Headers/PayWingsOnboardingKYC-Swift.h"; sourceTree = "<group>"; };
+		BA14C494DB26606CD8871857EAE5E0F5 /* es-419.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-419.lproj"; path = "InAppSettingsKit/Resources/es-419.lproj"; sourceTree = "<group>"; };
+		BF4E2D6A6FDF21A3E32FD6CB104DBC1E /* ja-JP.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "ja-JP.lproj"; path = "PayWingsOnboardingKYC.framework/ja-JP.lproj"; sourceTree = "<group>"; };
+		C082AE78A2C795A7CD50CE6E5575AB9C /* InAppSettingsKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InAppSettingsKit; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0EBD2DF1686090D1F1BF9A5C983BF3E /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ca.lproj; path = InAppSettingsKit/Resources/ca.lproj; sourceTree = "<group>"; };
+		C45656A33865217622BB1ABCA5099CA0 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = InAppSettingsKit/Resources/hu.lproj; sourceTree = "<group>"; };
+		C4FE240B361E9690F32BB2A46A68AF89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C843BA13562660A15842A4D9A9E67F97 /* IASKDatePickerViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKDatePickerViewCell.m; path = InAppSettingsKit/Views/IASKDatePickerViewCell.m; sourceTree = "<group>"; };
+		C86793848594F5844B5546F05790AE1F /* IdensicMobileSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "IdensicMobileSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		C8A93D7E0A9C804197C3CD8007836014 /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreFile.h; path = InAppSettingsKit/Models/IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		C8EB87B5C6B32A4A69ED1FE253D8A7F9 /* Pods-PayWingsOnboardingKYC-SampleApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PayWingsOnboardingKYC-SampleApp"; path = Pods_PayWingsOnboardingKYC_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9563C57CC44E4384F7E8965EB74D76F /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsWebViewController.m; path = InAppSettingsKit/Controllers/IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		CB50F3288E5DCD3531C5DD518205EACC /* InAppSettingsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InAppSettingsKit.modulemap; sourceTree = "<group>"; };
+		CF0DD49A955DC1E552F5EC84DCBD8586 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = InAppSettingsKit/Resources/it.lproj; sourceTree = "<group>"; };
+		D0E65DAE32347200A9CE23A592B54CD1 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = el.lproj; path = InAppSettingsKit/Resources/el.lproj; sourceTree = "<group>"; };
+		D45EF649E2B4A32D382265CFD88421AF /* InAppSettingsKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InAppSettingsKit.debug.xcconfig; sourceTree = "<group>"; };
+		D4B19CC421C763AF94C5E68980A6205E /* IASKTextViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextViewCell.h; path = InAppSettingsKit/Views/IASKTextViewCell.h; sourceTree = "<group>"; };
+		D4C149D219BB1E4BCDD32CA84805B354 /* LoadingViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = LoadingViewController.storyboardc; path = PayWingsOnboardingKYC.framework/LoadingViewController.storyboardc; sourceTree = "<group>"; };
+		D749FAD234BBAB5FBF272B2F79C4E267 /* IASKSpecifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifier.m; path = InAppSettingsKit/Models/IASKSpecifier.m; sourceTree = "<group>"; };
+		D9BD0B171B431CDDDE322AD9DD7F17A8 /* Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA0D6DB76F0762595EAF599751624A03 /* IASKViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKViewController.h; path = InAppSettingsKit/Controllers/IASKViewController.h; sourceTree = "<group>"; };
+		DD44BEA1C8084524FAF400855BFDCCC0 /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreUserDefaults.m; path = InAppSettingsKit/Models/IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		DD705051BBF5FEE322F726B8659D80EF /* IASKSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSlider.h; path = InAppSettingsKit/Views/IASKSlider.h; sourceTree = "<group>"; };
+		E029D3E1DBA24BCB2CDF011ADCB02FB0 /* Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		E218635B62BFBD9D6E78E4C2164F0717 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		E40108EC320609A20F38804EBFA9DFF4 /* AdditionalDocumentCameraViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = AdditionalDocumentCameraViewController.storyboardc; path = PayWingsOnboardingKYC.framework/AdditionalDocumentCameraViewController.storyboardc; sourceTree = "<group>"; };
+		E89B497F0D885683F766A72F428148BA /* ReferenceNumberViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = ReferenceNumberViewController.storyboardc; path = PayWingsOnboardingKYC.framework/ReferenceNumberViewController.storyboardc; sourceTree = "<group>"; };
+		E8ACA2028F7CCAFFC1704CE32E8C4833 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "InAppSettingsKit/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		E8E6AA914C26F2D977823D83F8B2C645 /* IASKTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextView.h; path = InAppSettingsKit/Views/IASKTextView.h; sourceTree = "<group>"; };
+		E90FDA76E12EB047DDC44AF924DFFB91 /* IASKSettingsStoreInMemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreInMemory.h; path = InAppSettingsKit/Models/IASKSettingsStoreInMemory.h; sourceTree = "<group>"; };
+		E9CA8103F8A718BA43C3F56EBF8CEBAC /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "PayWingsOnboardingKYC-PayWingsOnboardingKYC"; path = PayWingsOnboardingKYC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE6282D687768184D699FE03DF0C1E7 /* IASKColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKColor.m; path = InAppSettingsKit/Views/IASKColor.m; sourceTree = "<group>"; };
+		F3D61F29A811065219541151FC71ED1D /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = InAppSettingsKit/Resources/es.lproj; sourceTree = "<group>"; };
+		F40DE85340372BE3A2F66B2CC7F90F42 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = InAppSettingsKit/Resources/Base.lproj; sourceTree = "<group>"; };
+		F421A0C034192B7DA0855590B75FAFAA /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreFile.m; path = InAppSettingsKit/Models/IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		F4A78F4CBE850753396ED97D4466595C /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		F5063DC5B1E86A6FDC61314FAF92BB03 /* IASKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextField.h; path = InAppSettingsKit/Views/IASKTextField.h; sourceTree = "<group>"; };
+		F5B02F68156DB8D2EFBA4A87B6AF11A8 /* VideoID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VideoID.release.xcconfig; sourceTree = "<group>"; };
+		F7252A259A1B17854E9CC578E9CBB745 /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsWebViewController.h; path = InAppSettingsKit/Controllers/IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		F7CD1B460DF8EC785F4672B197C13D59 /* Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F81382DD075B4DCFF68AADE0AC7F8039 /* PhoneConfirmCodeViewController.storyboardc */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneConfirmCodeViewController.storyboardc; path = PayWingsOnboardingKYC.framework/PhoneConfirmCodeViewController.storyboardc; sourceTree = "<group>"; };
+		F939CE7CC6BBBC4B68920A0B6758B61C /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "InAppSettingsKit/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		FD2C96B4D8AF21497952D8182D71D779 /* IdensicMobileSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = IdensicMobileSDK.xcframework; sourceTree = "<group>"; };
+		FE7E4D7B1D41CBD33FD639B2025FEF17 /* IASKDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKDatePicker.m; path = InAppSettingsKit/Views/IASKDatePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C0BEF78EF957B6FAB3364E9BF3C8D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EE39E9B0FB74BB94AFD880D4C02EC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100B82CDA344F9B9585027C3D560C1C3 /* Foundation.framework in Frameworks */,
+				1DCDF597266DBE3E35B912CFBB3A07B0 /* MessageUI.framework in Frameworks */,
+				BFC45B8A130718FC2E15F7C2A1C051E1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C239511F2E4342852C56C698BEB3A587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB209AD4DD6937AD653DBDECE0B58807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAEEDC4C988110A41AA1B8CE11ECFB5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A326CE8E5EDD96FC082F85E8FC75E67 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D2607BB79A55A2483DB5A1B26693E5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C86793848594F5844B5546F05790AE1F /* IdensicMobileSDK-xcframeworks.sh */,
+				08AFEBA3BAAEE2749BC98415A82A5824 /* IdensicMobileSDK.debug.xcconfig */,
+				0B6FE81BE3B0AD57009BFF0CB549D84A /* IdensicMobileSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IdensicMobileSDK";
+			sourceTree = "<group>";
+		};
+		173A5D893E14742B689107853DEA7B7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB50F3288E5DCD3531C5DD518205EACC /* InAppSettingsKit.modulemap */,
+				41F4707B0FB65F27DEB5210935E2C21E /* InAppSettingsKit-dummy.m */,
+				109A792D72C88C45A108A5C71DE6AC7E /* InAppSettingsKit-Info.plist */,
+				72F864E9AC8567ED5785AAFF026D1E1F /* InAppSettingsKit-prefix.pch */,
+				51BBCE2735877E4E94CFE3F8CBCC087A /* InAppSettingsKit-umbrella.h */,
+				D45EF649E2B4A32D382265CFD88421AF /* InAppSettingsKit.debug.xcconfig */,
+				76BB4EA4EEAFCEE700F1AC9178ED4E2B /* InAppSettingsKit.release.xcconfig */,
+				5F44F6DD485E587D13CA49C569A05355 /* ResourceBundle-InAppSettingsKit-InAppSettingsKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InAppSettingsKit";
+			sourceTree = "<group>";
+		};
+		1F20461E3BD67E0118D6BE169853FFCE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C03EBA2A7419C6ED9017F06A200E21 /* VideoID-copy-dsyms.sh */,
+				4CF8C1B12A490AE4E566F2B0625F3EC2 /* VideoID.debug.xcconfig */,
+				F5B02F68156DB8D2EFBA4A87B6AF11A8 /* VideoID.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VideoID";
+			sourceTree = "<group>";
+		};
+		2216E3A7AF3FCE8C157489AB440805F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C96B4D8AF21497952D8182D71D779 /* IdensicMobileSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DF71C491310D95916B7BC18A49159A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1AF998C24CD34B311E23F55106870 /* eIDWebRTC */,
+				8E36CB350D68F06CCB5B4FF7200CD458 /* IdensicMobileSDK */,
+				C9B0544D94DBC793ACFD030A507B4A69 /* InAppSettingsKit */,
+				517FD06B693352A17B5A716E5DCDDBB6 /* PayWingsOnboardingKYC */,
+				7B54FDD562FB019E216295E0035E9D20 /* VideoID */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A326CE8E5EDD96FC082F85E8FC75E67 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				772245828F0E506C859B7A962DC70C92 /* Foundation.framework */,
+				E218635B62BFBD9D6E78E4C2164F0717 /* MessageUI.framework */,
+				C4FE240B361E9690F32BB2A46A68AF89 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		517FD06B693352A17B5A716E5DCDDBB6 /* PayWingsOnboardingKYC */ = {
+			isa = PBXGroup;
+			children = (
+				9816150B5D5D782BAAF897AE87F636E5 /* PayWingsOnboardingKYC.h */,
+				BA11CDDAD3A5073D33B35C0C6ACE04BB /* PayWingsOnboardingKYC-Swift.h */,
+				ADDDA465B35CD92722DA7AEDE43F8839 /* Frameworks */,
+				65BDC476FFFF471180DBED52FE946DE4 /* Resources */,
+				51C93FA9E6E40891934ED88B26B9EBDD /* Support Files */,
+			);
+			name = PayWingsOnboardingKYC;
+			path = PayWingsOnboardingKYC;
+			sourceTree = "<group>";
+		};
+		51C93FA9E6E40891934ED88B26B9EBDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D607FBBDA120559EFB8F25801A9C63 /* PayWingsOnboardingKYC.debug.xcconfig */,
+				3B16C15DFB39DE8BD39892618E747F7F /* PayWingsOnboardingKYC.release.xcconfig */,
+				16E927F28E5B91EC0D1A91600132163D /* ResourceBundle-PayWingsOnboardingKYC-PayWingsOnboardingKYC-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PayWingsOnboardingKYC";
+			sourceTree = "<group>";
+		};
+		587CE80A5B8E3AEEE0D2D6C9B2A6996E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4A78F4CBE850753396ED97D4466595C /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65BDC476FFFF471180DBED52FE946DE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E40108EC320609A20F38804EBFA9DFF4 /* AdditionalDocumentCameraViewController.storyboardc */,
+				31055A19D1053769AB15095D8CC7B7C8 /* AdditionalDocumentCell.nib */,
+				65AC0FA8D514C1A2B17530D70D8BFCB7 /* AdditionalDocumentsViewController.storyboardc */,
+				29A66F8C94D5BFD4B60FB5EBA7B4BE84 /* AdditionalDocumentWithSubtypePreview.storyboardc */,
+				A17A76381868F4D579E42EA0E8E154FF /* AdditionalDocumentWithSubtypesViewController.storyboardc */,
+				0E60F11766525B70C6C633C6DC234A31 /* ChooseDocumentViewController.storyboardc */,
+				12C385FC29F5D5E588AEE8B6181AF7B1 /* ConfirmCancelKycViewController.storyboardc */,
+				B0C3492295151F1C9BFC4E1DB669D43B /* CountryPickerView.bundle */,
+				B9A8E2D3235760B062E351DDDD905E28 /* CountryPickerView.nib */,
+				B2AA7FA626FCE5959C030CCBCBE47C62 /* EmailViewController.storyboardc */,
+				22FE3FE771573578E8CD1A7C7A08AD90 /* en.lproj */,
+				BF4E2D6A6FDF21A3E32FD6CB104DBC1E /* ja-JP.lproj */,
+				D4C149D219BB1E4BCDD32CA84805B354 /* LoadingViewController.storyboardc */,
+				3BECE8A92A0C38B5B90D2688C5DAC1AF /* PersonalInfoViewController.storyboardc */,
+				F81382DD075B4DCFF68AADE0AC7F8039 /* PhoneConfirmCodeViewController.storyboardc */,
+				939599DA39F7A37A28D2DD4A20CA602C /* PhoneNumberMetadata.json */,
+				2F13565CF70E23ACC001D13DAABEDB59 /* PhoneNumberMetadata.xml */,
+				9E170C8CF167E704D40855FF34B54709 /* PhoneVerificationViewController.storyboardc */,
+				E89B497F0D885683F766A72F428148BA /* ReferenceNumberViewController.storyboardc */,
+				B17E64F1E7BF866D8F7704BB8C2330E2 /* ResidentialAddressViewController.storyboardc */,
+				A5E8EEF7C52700B795133093AD7D2116 /* VideoFailedRepeatViewController.storyboardc */,
+				A5BEE8E132CC7BDEFBFA25AC2C65B791 /* VideoViewController.storyboardc */,
+				7008329A51BFFC7522129C331B3E396C /* zh-Hans.lproj */,
+				3F69A839857ED1A00E85DB86D61DA097 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6CC1AF998C24CD34B311E23F55106870 /* eIDWebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				587CE80A5B8E3AEEE0D2D6C9B2A6996E /* Frameworks */,
+				AA7D553483DCA4BB6002A521F514E3B2 /* Support Files */,
+			);
+			name = eIDWebRTC;
+			path = eIDWebRTC;
+			sourceTree = "<group>";
+		};
+		7B54FDD562FB019E216295E0035E9D20 /* VideoID */ = {
+			isa = PBXGroup;
+			children = (
+				83B93BE116B2E85CB23D4CF11451D415 /* Frameworks */,
+				1F20461E3BD67E0118D6BE169853FFCE /* Support Files */,
+			);
+			name = VideoID;
+			path = VideoID;
+			sourceTree = "<group>";
+		};
+		83B93BE116B2E85CB23D4CF11451D415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				522BA11990400CE1FD741E03F9A1B70E /* VideoID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E36CB350D68F06CCB5B4FF7200CD458 /* IdensicMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2216E3A7AF3FCE8C157489AB440805F4 /* Frameworks */,
+				0D2607BB79A55A2483DB5A1B26693E5E /* Support Files */,
+			);
+			name = IdensicMobileSDK;
+			path = IdensicMobileSDK;
+			sourceTree = "<group>";
+		};
+		96D32705F11D3651FF37B0613B60A44E /* Pods-PayWingsOnboardingKYC-SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				3A13C1017EEF2D63D30F1B0578F44205 /* Pods-PayWingsOnboardingKYC-SampleApp.modulemap */,
+				D9BD0B171B431CDDDE322AD9DD7F17A8 /* Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.markdown */,
+				F7CD1B460DF8EC785F4672B197C13D59 /* Pods-PayWingsOnboardingKYC-SampleApp-acknowledgements.plist */,
+				A266C4E2BC48D168ADB2697C08C96B1C /* Pods-PayWingsOnboardingKYC-SampleApp-dummy.m */,
+				E029D3E1DBA24BCB2CDF011ADCB02FB0 /* Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh */,
+				0FCC06C9676288AABA136424A68BC3AE /* Pods-PayWingsOnboardingKYC-SampleApp-Info.plist */,
+				372BFDC5FB2DA8D814C2F9E51F95A101 /* Pods-PayWingsOnboardingKYC-SampleApp-resources.sh */,
+				4D0D52B7BB6431CC57F961DC22E9AE04 /* Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h */,
+				A8D28E01267F8CB93303EBFDE7CEE9DF /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */,
+				26DDA8E8415C19D0C44C77B3334F1735 /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */,
+			);
+			name = "Pods-PayWingsOnboardingKYC-SampleApp";
+			path = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp";
+			sourceTree = "<group>";
+		};
+		AA7D553483DCA4BB6002A521F514E3B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				612A24BD8D7362460BCEC00E7A627E76 /* eIDWebRTC.debug.xcconfig */,
+				7A556FCDF2702CE533E5D33C81F0658F /* eIDWebRTC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/eIDWebRTC";
+			sourceTree = "<group>";
+		};
+		ADDDA465B35CD92722DA7AEDE43F8839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				627EC086B63E262C52B3A87A5667CECD /* PayWingsOnboardingKYC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BED5CC0FFD2F19EDF9756C4F3C28F868 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96D32705F11D3651FF37B0613B60A44E /* Pods-PayWingsOnboardingKYC-SampleApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C29B7E8F5DD6E9883FD1681EDF2861EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F40DE85340372BE3A2F66B2CC7F90F42 /* Base.lproj */,
+				C0EBD2DF1686090D1F1BF9A5C983BF3E /* ca.lproj */,
+				42302859F62C6BC03FB63111D86B9855 /* de.lproj */,
+				D0E65DAE32347200A9CE23A592B54CD1 /* el.lproj */,
+				0E9B73BE6986CD645484D24608332F38 /* en.lproj */,
+				F3D61F29A811065219541151FC71ED1D /* es.lproj */,
+				BA14C494DB26606CD8871857EAE5E0F5 /* es-419.lproj */,
+				910C8B5A85DDE8C783054303EDF3ED64 /* es-MX.lproj */,
+				2BB888E7A7E57B4B93977FF49441FA65 /* fr.lproj */,
+				202E557C8317132DADFF72D689FC9F6E /* hr.lproj */,
+				C45656A33865217622BB1ABCA5099CA0 /* hu.lproj */,
+				CF0DD49A955DC1E552F5EC84DCBD8586 /* it.lproj */,
+				43BD416CC6D3410DCC0B6A3F0773C6D1 /* ja.lproj */,
+				A778DAADF6705C29498D35513F696722 /* nb.lproj */,
+				B33AC8C1A05CCB09104F37022F434903 /* nl.lproj */,
+				2FC2455A19C1985B24B7BBBA8B7B4430 /* pl.lproj */,
+				817B5BF010BCCAA7A2D0D6FCF2DDF087 /* pt.lproj */,
+				B6582A36A2118DFBA6A2CA2846ABB601 /* pt-PT.lproj */,
+				7A6FE4C72A1D458D0F6DB01E64E4AB49 /* ru.lproj */,
+				6E0AEEDCBC8BBE96BB89EA2EFE946715 /* sv.lproj */,
+				A9EE0453A0E0976DB8648A3FDF315477 /* th.lproj */,
+				3EF309EE2B43FAD195244E3C41F9E8F3 /* tr.lproj */,
+				98BD452D07BC517B73924BDA9D2E8A03 /* uk.lproj */,
+				E8ACA2028F7CCAFFC1704CE32E8C4833 /* zh-Hans.lproj */,
+				F939CE7CC6BBBC4B68920A0B6758B61C /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C9B0544D94DBC793ACFD030A507B4A69 /* InAppSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				62A7D45B4CE6DBB0D75758B775449431 /* IASKAppSettingsViewController.h */,
+				AAE16AA9B1DBFA05F1DF7745BBEA0D6E /* IASKAppSettingsViewController.m */,
+				F7252A259A1B17854E9CC578E9CBB745 /* IASKAppSettingsWebViewController.h */,
+				C9563C57CC44E4384F7E8965EB74D76F /* IASKAppSettingsWebViewController.m */,
+				06F32E6F320EE573FF7DB5DE313A7B16 /* IASKColor.h */,
+				EAE6282D687768184D699FE03DF0C1E7 /* IASKColor.m */,
+				8660A708C84C37A1708DFDC43DB6401A /* IASKDatePicker.h */,
+				FE7E4D7B1D41CBD33FD639B2025FEF17 /* IASKDatePicker.m */,
+				4BC7BD37A1B5CF84B3FBF1166DDE5626 /* IASKDatePickerViewCell.h */,
+				C843BA13562660A15842A4D9A9E67F97 /* IASKDatePickerViewCell.m */,
+				8DF98BA6E1DB65E0734B8E38F873BC2F /* IASKEmbeddedDatePickerViewCell.h */,
+				9C1CED6B9D0A1C9F7CA5AE64D6C57D5C /* IASKEmbeddedDatePickerViewCell.m */,
+				4B8D1598D9ED02964EF1FEF060D4DE5C /* IASKMultipleValueSelection.h */,
+				02233ACB409470024DA335CB1384C01D /* IASKMultipleValueSelection.m */,
+				25580992DFDA3529E20FF13452D9F343 /* IASKPSSliderSpecifierViewCell.h */,
+				5CD5D46822DACFBD318F981AED1B2E3E /* IASKPSSliderSpecifierViewCell.m */,
+				4E17AAC5F89F85785EA75000C5F6056C /* IASKPSTextFieldSpecifierViewCell.h */,
+				51190F947543DC982B0A1159B73E4A4E /* IASKPSTextFieldSpecifierViewCell.m */,
+				0CCED6E5B68D487DDDDB5AA70018CB28 /* IASKSettingsReader.h */,
+				88B399E64DC9998632FE29684FD1B881 /* IASKSettingsReader.m */,
+				006B1B2925733E7A5D91F8CC59A5F802 /* IASKSettingsStore.h */,
+				80CC2AE014AACC28F7EB4A5A704E568D /* IASKSettingsStore.m */,
+				C8A93D7E0A9C804197C3CD8007836014 /* IASKSettingsStoreFile.h */,
+				F421A0C034192B7DA0855590B75FAFAA /* IASKSettingsStoreFile.m */,
+				E90FDA76E12EB047DDC44AF924DFFB91 /* IASKSettingsStoreInMemory.h */,
+				A6A950E167A3F366EA3628A360F912D6 /* IASKSettingsStoreInMemory.m */,
+				B6518C65DD746BF8F55376A99862785E /* IASKSettingsStoreUserDefaults.h */,
+				DD44BEA1C8084524FAF400855BFDCCC0 /* IASKSettingsStoreUserDefaults.m */,
+				DD705051BBF5FEE322F726B8659D80EF /* IASKSlider.h */,
+				26E40E55CE2D51F7AEAC3FA46EE6D760 /* IASKSlider.m */,
+				6DEB0176A11133882A0698585BD2528B /* IASKSpecifier.h */,
+				D749FAD234BBAB5FBF272B2F79C4E267 /* IASKSpecifier.m */,
+				B04835FBCAB3A35339DD5EB9465CC6CD /* IASKSpecifierValuesViewController.h */,
+				57B0CCBE7570CAAC1F23AB4F0D7BD942 /* IASKSpecifierValuesViewController.m */,
+				70D70435F42B1C10FD801035F2FDFACB /* IASKSwitch.h */,
+				7BF11C405047A22870A3D657DF0EE349 /* IASKSwitch.m */,
+				F5063DC5B1E86A6FDC61314FAF92BB03 /* IASKTextField.h */,
+				B51D7EA0ECAA799A69675D136E6C30FC /* IASKTextField.m */,
+				E8E6AA914C26F2D977823D83F8B2C645 /* IASKTextView.h */,
+				88B16A964C9C0317498577383406FE7F /* IASKTextView.m */,
+				D4B19CC421C763AF94C5E68980A6205E /* IASKTextViewCell.h */,
+				67A52FF090A64DBD95D425FC409784D7 /* IASKTextViewCell.m */,
+				DA0D6DB76F0762595EAF599751624A03 /* IASKViewController.h */,
+				C29B7E8F5DD6E9883FD1681EDF2861EE /* Resources */,
+				173A5D893E14742B689107853DEA7B7C /* Support Files */,
+			);
+			name = InAppSettingsKit;
+			path = InAppSettingsKit;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				2DF71C491310D95916B7BC18A49159A0 /* Pods */,
+				E3C607315005E889528283382086E0EA /* Products */,
+				BED5CC0FFD2F19EDF9756C4F3C28F868 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E3C607315005E889528283382086E0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C082AE78A2C795A7CD50CE6E5575AB9C /* InAppSettingsKit */,
+				325E862631E06444E4504511C87F1E9C /* InAppSettingsKit-InAppSettingsKit */,
+				E9CA8103F8A718BA43C3F56EBF8CEBAC /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */,
+				C8EB87B5C6B32A4A69ED1FE253D8A7F9 /* Pods-PayWingsOnboardingKYC-SampleApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31CB0CA7815BFFADB6DC026750C267BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC503B1A01DF4F5F07B18DF95DB90223 /* Pods-PayWingsOnboardingKYC-SampleApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AC029EAAD23DD543753CE1F646D823A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F4EE06070316AE19B98451A6FDE961 /* IASKAppSettingsViewController.h in Headers */,
+				E974B2B1F117A084FB85C65ADEC80D11 /* IASKAppSettingsWebViewController.h in Headers */,
+				5DB6A37F0C1F47563F54AA64047460B7 /* IASKColor.h in Headers */,
+				0FCA39C6265C9C0FECF42394D5221366 /* IASKDatePicker.h in Headers */,
+				B60A3816A5AFA78ED6F882AD9F84E207 /* IASKDatePickerViewCell.h in Headers */,
+				CBE4558B24AE8DB83FCFE4D063D9B70E /* IASKEmbeddedDatePickerViewCell.h in Headers */,
+				22246678D6BFEFD908628E9BA06E86C2 /* IASKMultipleValueSelection.h in Headers */,
+				35952D2FB039FBB5E41EAA5455F79A60 /* IASKPSSliderSpecifierViewCell.h in Headers */,
+				26DD73425B8923480FBEBA566380AEC0 /* IASKPSTextFieldSpecifierViewCell.h in Headers */,
+				7967574DDCB8E92EFBE116C391A08FD5 /* IASKSettingsReader.h in Headers */,
+				8952F30F97704903AC091ABBB398766D /* IASKSettingsStore.h in Headers */,
+				84EE34A93313D5FC758FEF65100B8A8F /* IASKSettingsStoreFile.h in Headers */,
+				BC0656D141361D73315918D921BB767B /* IASKSettingsStoreInMemory.h in Headers */,
+				D1892A17A32328F06501050F1B068C09 /* IASKSettingsStoreUserDefaults.h in Headers */,
+				C38E36358823837C1B6F605A6ADCF812 /* IASKSlider.h in Headers */,
+				8BE3EF7AE8541ABEFDD8ACF4628DA7A7 /* IASKSpecifier.h in Headers */,
+				B5BC0773EF63BEDC7196F56A67AAF685 /* IASKSpecifierValuesViewController.h in Headers */,
+				06783E10D818DD4F55396613748A31AC /* IASKSwitch.h in Headers */,
+				470A44AF9525AF0A73949E703ACB8249 /* IASKTextField.h in Headers */,
+				DB287EDE377811F63E0D6426B34562EF /* IASKTextView.h in Headers */,
+				AF29550F394BCD6704DFD39D63B9DF42 /* IASKTextViewCell.h in Headers */,
+				B3D4A9E580BF924BDAED9C719089E8F3 /* IASKViewController.h in Headers */,
+				AFE5C9A5AF5B19703C9EE7265BE99011 /* InAppSettingsKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01741109F700A5BAC5B9084C7BDD39D4 /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982BE0ABA59425B9DBDB0F9C68993A81 /* Build configuration list for PBXNativeTarget "PayWingsOnboardingKYC-PayWingsOnboardingKYC" */;
+			buildPhases = (
+				E0EC966B4ABBA4BF342A9F54DB30E6F3 /* Sources */,
+				C239511F2E4342852C56C698BEB3A587 /* Frameworks */,
+				EBA4D0D6151FA66EF87A0270401B98A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PayWingsOnboardingKYC-PayWingsOnboardingKYC";
+			productName = PayWingsOnboardingKYC;
+			productReference = E9CA8103F8A718BA43C3F56EBF8CEBAC /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */;
+			productType = "com.apple.product-type.bundle";
+		};
+		25BCC360D3AC840DC456453BE3935F73 /* Pods-PayWingsOnboardingKYC-SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB7B364F9AC463BC180F539B259C900 /* Build configuration list for PBXNativeTarget "Pods-PayWingsOnboardingKYC-SampleApp" */;
+			buildPhases = (
+				31CB0CA7815BFFADB6DC026750C267BE /* Headers */,
+				E9CCE6509AFAF70A8327055A3A6E80DC /* Sources */,
+				FB209AD4DD6937AD653DBDECE0B58807 /* Frameworks */,
+				E17FA6CEE4FDDCD481DFADE0B0BFA4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				389CA2C3ADD727046008ADE30C2FE4D9 /* PBXTargetDependency */,
+				9423C9B181D8A19A2397B92166720684 /* PBXTargetDependency */,
+				ED622BAF92B1F7F0F6E25E6D728CE507 /* PBXTargetDependency */,
+				F16880842BEA14F38DA4843FCD0F15F7 /* PBXTargetDependency */,
+				5E73849874029381DFEB948623224768 /* PBXTargetDependency */,
+			);
+			name = "Pods-PayWingsOnboardingKYC-SampleApp";
+			productName = Pods_PayWingsOnboardingKYC_SampleApp;
+			productReference = C8EB87B5C6B32A4A69ED1FE253D8A7F9 /* Pods-PayWingsOnboardingKYC-SampleApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B4848122435F4C22D574A5DA6D2EFB3 /* InAppSettingsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E3E0F7C38AF8A9553FE5EDC42446C6 /* Build configuration list for PBXNativeTarget "InAppSettingsKit" */;
+			buildPhases = (
+				5AC029EAAD23DD543753CE1F646D823A /* Headers */,
+				FAD1A3471A76AE56FE898EA0F6BF803C /* Sources */,
+				7EE39E9B0FB74BB94AFD880D4C02EC27 /* Frameworks */,
+				AF51AF0A947475C6E241999E6375D248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4526294D21619898D1FA06B76CB74EC /* PBXTargetDependency */,
+			);
+			name = InAppSettingsKit;
+			productName = InAppSettingsKit;
+			productReference = C082AE78A2C795A7CD50CE6E5575AB9C /* InAppSettingsKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A996938DFC560C0A3EF0DD6CA6B032A /* InAppSettingsKit-InAppSettingsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66C473E55EA058F0A67BDCB2C0ECEEF /* Build configuration list for PBXNativeTarget "InAppSettingsKit-InAppSettingsKit" */;
+			buildPhases = (
+				3139FA8EBB1C2734DD49634FD1CC6EE2 /* Sources */,
+				4C0BEF78EF957B6FAB3364E9BF3C8D68 /* Frameworks */,
+				34F3D333CB8E8AD180ED8F089EEC9D20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InAppSettingsKit-InAppSettingsKit";
+			productName = InAppSettingsKit;
+			productReference = 325E862631E06444E4504511C87F1E9C /* InAppSettingsKit-InAppSettingsKit */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ca,
+				de,
+				el,
+				en,
+				es,
+				"es-419",
+				"es-MX",
+				fr,
+				hr,
+				hu,
+				it,
+				ja,
+				"ja-JP",
+				nb,
+				nl,
+				pl,
+				pt,
+				"pt-PT",
+				ru,
+				sv,
+				th,
+				tr,
+				uk,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E3C607315005E889528283382086E0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A2860D7D818D1793D0E8E2DEE323899 /* eIDWebRTC */,
+				616893CC4A6A16338DE78B55D4D34738 /* IdensicMobileSDK */,
+				5B4848122435F4C22D574A5DA6D2EFB3 /* InAppSettingsKit */,
+				8A996938DFC560C0A3EF0DD6CA6B032A /* InAppSettingsKit-InAppSettingsKit */,
+				281E1088587AFF0FC97E6AF21BF3E705 /* PayWingsOnboardingKYC */,
+				01741109F700A5BAC5B9084C7BDD39D4 /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */,
+				25BCC360D3AC840DC456453BE3935F73 /* Pods-PayWingsOnboardingKYC-SampleApp */,
+				BDFDB56CB61C8A700E5CB485914CC788 /* VideoID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34F3D333CB8E8AD180ED8F089EEC9D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C1B213E1E134DF16CF89F9F6683A32 /* Base.lproj in Resources */,
+				DC710F2ACFD4F401BE1CFB41C9417E8E /* ca.lproj in Resources */,
+				42CAE91F642FD70B53A51B6247942DD5 /* de.lproj in Resources */,
+				FFE3020CCD62A98E6E3689A170075904 /* el.lproj in Resources */,
+				6BD181A46454A23E51810A23010DB303 /* en.lproj in Resources */,
+				16D47F90B7E777AB56099D8F9D9E620A /* es.lproj in Resources */,
+				CB1952F58482856D5E1740DA7829C7BA /* es-419.lproj in Resources */,
+				70574F2589278B73EC84F1A9D2F1F600 /* es-MX.lproj in Resources */,
+				7B53C889B89484A7E3956B378DC983B8 /* fr.lproj in Resources */,
+				D37FFB0FEE0925059D26F6BF58F86A35 /* hr.lproj in Resources */,
+				D8CA0AF69D36C2939AACCE437AF63F0B /* hu.lproj in Resources */,
+				806CFA649ED3C02F884DBCEC00EE4A53 /* it.lproj in Resources */,
+				DAE0BBF5FBC5F86ED184F2931CDE0CC5 /* ja.lproj in Resources */,
+				B102ACF430EFB372D27237860698BE2C /* nb.lproj in Resources */,
+				82E4DAF0B9DA32B4450BA62EEFD80BF8 /* nl.lproj in Resources */,
+				D887E63C26A45FF4AAF63D96E58C7477 /* pl.lproj in Resources */,
+				84F29D83829866314676EF6D4B7D681B /* pt.lproj in Resources */,
+				A41EDD51E522ED8FDF799A8F4F0D402B /* pt-PT.lproj in Resources */,
+				5D80AFF3D4768184F4BC6DC3382E459D /* ru.lproj in Resources */,
+				E6BF6D6867D98EA1ECCAF338097646DD /* sv.lproj in Resources */,
+				ABD9BC4C3F862CC706CDB15C5CB15458 /* th.lproj in Resources */,
+				8247CD036E9357ABB61B71EBBDDB0655 /* tr.lproj in Resources */,
+				BE459D3374C6338263C124A6F56490DD /* uk.lproj in Resources */,
+				D9B9A57B1DEDA43836EEC5F792DA4FC6 /* zh-Hans.lproj in Resources */,
+				52452C5F421431AB3A866F5DD7BE5A1A /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF51AF0A947475C6E241999E6375D248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3D4B4390CD54DBE022DBBA3C76F5EC /* InAppSettingsKit-InAppSettingsKit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17FA6CEE4FDDCD481DFADE0B0BFA4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA4D0D6151FA66EF87A0270401B98A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A788486488E74F1B8484F812211DF7 /* AdditionalDocumentCameraViewController.storyboardc in Resources */,
+				FBF2BB4888BC4CD33C0724763877A5C0 /* AdditionalDocumentCell.nib in Resources */,
+				25D6C0AB1CDE0A59BE06172C5C6084A1 /* AdditionalDocumentsViewController.storyboardc in Resources */,
+				644A62243B3C88B5149C8432E190A794 /* AdditionalDocumentWithSubtypePreview.storyboardc in Resources */,
+				56CD658632C3A225B9B34A5C7310ACAA /* AdditionalDocumentWithSubtypesViewController.storyboardc in Resources */,
+				84D70050A93459D087AA397DC4F344D1 /* ChooseDocumentViewController.storyboardc in Resources */,
+				214A98AA73A18026C698F2634F150170 /* ConfirmCancelKycViewController.storyboardc in Resources */,
+				2AE14441A6FA3C1B0683BDF26DCC920D /* CountryPickerView.bundle in Resources */,
+				5F927C0DF88B98A51561104DBBAC24FA /* CountryPickerView.nib in Resources */,
+				03AA13CE091E14588E9E6A8CB1BB6CE5 /* EmailViewController.storyboardc in Resources */,
+				7C548ED9F25DA2C3F8A06846A120F15F /* en.lproj in Resources */,
+				3A683C824FE98988BFF39538CED3726A /* ja-JP.lproj in Resources */,
+				4BE87E33D2A0836C8055FE87CEEFE97A /* LoadingViewController.storyboardc in Resources */,
+				29FA9C22EA3A04BA09374E711913627E /* PersonalInfoViewController.storyboardc in Resources */,
+				3961D2632AD190A3BAA87AE5B511DA2E /* PhoneConfirmCodeViewController.storyboardc in Resources */,
+				2464477685A9A990543D68AD67153F25 /* PhoneNumberMetadata.json in Resources */,
+				89DC6976C70233F2D93CDB7ECF9E736A /* PhoneNumberMetadata.xml in Resources */,
+				2958944C87E67EF21E47532BA0A2CF23 /* PhoneVerificationViewController.storyboardc in Resources */,
+				EE2BD566C94ABC201D6411258D7ACEF7 /* ReferenceNumberViewController.storyboardc in Resources */,
+				6CC5B078C9B7427F40D98CDF712C1095 /* ResidentialAddressViewController.storyboardc in Resources */,
+				11A4F5EDF7A384DEB8A8230D8D8AAC4A /* VideoFailedRepeatViewController.storyboardc in Resources */,
+				75E1B2CC3E0353F25776C9C34C6287DF /* VideoViewController.storyboardc in Resources */,
+				EB03558D945C96AFFB7AB2CFF9237885 /* zh-Hans.lproj in Resources */,
+				F398DE4AE72D27B74A7EF14F0C10094B /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22222650FABD153F9AA256FD9B971423 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/IdensicMobileSDK/IdensicMobileSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/IdensicMobileSDK/IdensicMobileSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/IdensicMobileSDK/IdensicMobileSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E9FD3F3891AF191A74E1C6A90301C3B /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/VideoID/VideoID-copy-dsyms-input-files.xcfilelist",
+			);
+			name = "[CP] Copy dSYMs";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/VideoID/VideoID-copy-dsyms-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/VideoID/VideoID-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3139FA8EBB1C2734DD49634FD1CC6EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0EC966B4ABBA4BF342A9F54DB30E6F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CCE6509AFAF70A8327055A3A6E80DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F11FDAC523D9E0E0F3EA3EA69AD4D22 /* Pods-PayWingsOnboardingKYC-SampleApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD1A3471A76AE56FE898EA0F6BF803C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2789F40045DE25B8A47354D0DA09D98 /* IASKAppSettingsViewController.m in Sources */,
+				A62F819B4F4D3E41FB188E1C9746D97F /* IASKAppSettingsWebViewController.m in Sources */,
+				FFFCDC61D302B4A7F5FCE0AA1A09B641 /* IASKColor.m in Sources */,
+				4A28E0398EA756D6D15B1654332457C1 /* IASKDatePicker.m in Sources */,
+				583CA41AFEC7146CB6CCB91B869DA532 /* IASKDatePickerViewCell.m in Sources */,
+				3EE300C93D626B09D885507944F1C9A8 /* IASKEmbeddedDatePickerViewCell.m in Sources */,
+				9D80DA46196D13C871FDC8C7ACDE1931 /* IASKMultipleValueSelection.m in Sources */,
+				07A406F2EB21CAB632047E717C375A40 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				7DFFDE216A29C84367A1FF25C8C3997A /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				363E73CA6B4F49E0332F22B3BC0A9756 /* IASKSettingsReader.m in Sources */,
+				70A5A1219EAA8D1F81684F82876CB853 /* IASKSettingsStore.m in Sources */,
+				44826469D5B69B327E161017A6C1DF3D /* IASKSettingsStoreFile.m in Sources */,
+				990E6CFA4E3A80697F5040B493499F0F /* IASKSettingsStoreInMemory.m in Sources */,
+				B808315D6E11D555A84514CB05150183 /* IASKSettingsStoreUserDefaults.m in Sources */,
+				8598AE5A929E0BC306DC2FCD1B4B594F /* IASKSlider.m in Sources */,
+				FF56CCA4382BC30A0D803C50707FC681 /* IASKSpecifier.m in Sources */,
+				31C32BF353D8C8BEDC6E96FFC36F3320 /* IASKSpecifierValuesViewController.m in Sources */,
+				A4005F599B6BAE342AD95A8280022A9C /* IASKSwitch.m in Sources */,
+				610E20924EDBC3B2D974B121C0A520AE /* IASKTextField.m in Sources */,
+				7AD887620833E9534FE67D1BE50C21F7 /* IASKTextView.m in Sources */,
+				3E6BA8025806D3741978ABF3CBE90F97 /* IASKTextViewCell.m in Sources */,
+				76084D8DA7223FA7BBD71B9F4F320A5C /* InAppSettingsKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F6C149797079C98D5DAA6CF19379E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = eIDWebRTC;
+			target = 1A2860D7D818D1793D0E8E2DEE323899 /* eIDWebRTC */;
+			targetProxy = A376D4E94397B495B32C60A8FA1BF9DF /* PBXContainerItemProxy */;
+		};
+		188993F1E8B7785F6DCFCF1983F8093A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoID;
+			target = BDFDB56CB61C8A700E5CB485914CC788 /* VideoID */;
+			targetProxy = DBF3D220711B53AD1DB3AE83BFCA6889 /* PBXContainerItemProxy */;
+		};
+		389CA2C3ADD727046008ADE30C2FE4D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IdensicMobileSDK;
+			target = 616893CC4A6A16338DE78B55D4D34738 /* IdensicMobileSDK */;
+			targetProxy = AFA4EBB39B320B4D3D8E33E2ECA0A164 /* PBXContainerItemProxy */;
+		};
+		59AF7C4340209066EEC1D8573237AB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PayWingsOnboardingKYC-PayWingsOnboardingKYC";
+			target = 01741109F700A5BAC5B9084C7BDD39D4 /* PayWingsOnboardingKYC-PayWingsOnboardingKYC */;
+			targetProxy = FDB62CEFB46E9D0050543CAD0F040522 /* PBXContainerItemProxy */;
+		};
+		5E73849874029381DFEB948623224768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = eIDWebRTC;
+			target = 1A2860D7D818D1793D0E8E2DEE323899 /* eIDWebRTC */;
+			targetProxy = 299507415E0F8FEBCD426294B051F01E /* PBXContainerItemProxy */;
+		};
+		9423C9B181D8A19A2397B92166720684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InAppSettingsKit;
+			target = 5B4848122435F4C22D574A5DA6D2EFB3 /* InAppSettingsKit */;
+			targetProxy = A97BAFE503F2353E150A9827D22D47BB /* PBXContainerItemProxy */;
+		};
+		ED622BAF92B1F7F0F6E25E6D728CE507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWingsOnboardingKYC;
+			target = 281E1088587AFF0FC97E6AF21BF3E705 /* PayWingsOnboardingKYC */;
+			targetProxy = 41BABEF9E11715DACB823FC55FEC98CC /* PBXContainerItemProxy */;
+		};
+		F16880842BEA14F38DA4843FCD0F15F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoID;
+			target = BDFDB56CB61C8A700E5CB485914CC788 /* VideoID */;
+			targetProxy = 200CEAD08BF11B166B94D1A820665F90 /* PBXContainerItemProxy */;
+		};
+		F4526294D21619898D1FA06B76CB74EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "InAppSettingsKit-InAppSettingsKit";
+			target = 8A996938DFC560C0A3EF0DD6CA6B032A /* InAppSettingsKit-InAppSettingsKit */;
+			targetProxy = 14656BFB8BD01056B1809F402A632076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01643605888C422CB423DA2CDED4974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B16C15DFB39DE8BD39892618E747F7F /* PayWingsOnboardingKYC.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PayWingsOnboardingKYC";
+				IBSC_MODULE = PayWingsOnboardingKYC;
+				INFOPLIST_FILE = "Target Support Files/PayWingsOnboardingKYC/ResourceBundle-PayWingsOnboardingKYC-PayWingsOnboardingKYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = PayWingsOnboardingKYC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0F7D7C77591ECBA22EF72F6F5B7173A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A556FCDF2702CE533E5D33C81F0658F /* eIDWebRTC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		39088EE3D70CF46BBB118DB00A1F5AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 612A24BD8D7362460BCEC00E7A627E76 /* eIDWebRTC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		431676882F3567099F7EC77CB1B9E5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BB4EA4EEAFCEE700F1AC9178ED4E2B /* InAppSettingsKit.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InAppSettingsKit/InAppSettingsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit.modulemap";
+				PRODUCT_MODULE_NAME = InAppSettingsKit;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E491AE14E05E540BA911EEFF0412C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AFEBA3BAAEE2749BC98415A82A5824 /* IdensicMobileSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55F655F0330A82755BE86758D60F3D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45EF649E2B4A32D382265CFD88421AF /* InAppSettingsKit.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InAppSettingsKit/InAppSettingsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit.modulemap";
+				PRODUCT_MODULE_NAME = InAppSettingsKit;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6EA6C9B2C5E23D04F1E49FCA16447658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D28E01267F8CB93303EBFDE7CEE9DF /* Pods-PayWingsOnboardingKYC-SampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		786546AF8C3765937A55CF84BA04D824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6FE81BE3B0AD57009BFF0CB549D84A /* IdensicMobileSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809A006B001B3AA0D956C45726E944ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D607FBBDA120559EFB8F25801A9C63 /* PayWingsOnboardingKYC.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PayWingsOnboardingKYC";
+				IBSC_MODULE = PayWingsOnboardingKYC;
+				INFOPLIST_FILE = "Target Support Files/PayWingsOnboardingKYC/ResourceBundle-PayWingsOnboardingKYC-PayWingsOnboardingKYC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = PayWingsOnboardingKYC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		84D6170AEBB0A1019B0EC8F697978EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF8C1B12A490AE4E566F2B0625F3EC2 /* VideoID.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0D00E88890E55AFA92D8975A3B2759C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5B02F68156DB8D2EFBA4A87B6AF11A8 /* VideoID.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5D6BC635C4F0B96CFEF45F94F7A61C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BB4EA4EEAFCEE700F1AC9178ED4E2B /* InAppSettingsKit.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/InAppSettingsKit";
+				IBSC_MODULE = InAppSettingsKit;
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/ResourceBundle-InAppSettingsKit-InAppSettingsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CD78E2D0BCBF2EC37E5261CFDD272505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45EF649E2B4A32D382265CFD88421AF /* InAppSettingsKit.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/InAppSettingsKit";
+				IBSC_MODULE = InAppSettingsKit;
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/ResourceBundle-InAppSettingsKit-InAppSettingsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DF7333D2EDEA08D2F1513EB50554F85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D607FBBDA120559EFB8F25801A9C63 /* PayWingsOnboardingKYC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E17F9127B5A1E10D18C371C680A04436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B16C15DFB39DE8BD39892618E747F7F /* PayWingsOnboardingKYC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E35FC593D97C07C76CC422319BF5FF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DDA8E8415C19D0C44C77B3334F1735 /* Pods-PayWingsOnboardingKYC-SampleApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06DD6BAEBAD11F080BBC67879682F95B /* Build configuration list for PBXAggregateTarget "PayWingsOnboardingKYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7333D2EDEA08D2F1513EB50554F85D /* Debug */,
+				E17F9127B5A1E10D18C371C680A04436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E68C74C931C23AC435AEED43725503A /* Build configuration list for PBXAggregateTarget "IdensicMobileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E491AE14E05E540BA911EEFF0412C3C /* Debug */,
+				786546AF8C3765937A55CF84BA04D824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59732C5270EC0D6573C45C144F6139D2 /* Build configuration list for PBXAggregateTarget "eIDWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39088EE3D70CF46BBB118DB00A1F5AFA /* Debug */,
+				0F7D7C77591ECBA22EF72F6F5B7173A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982BE0ABA59425B9DBDB0F9C68993A81 /* Build configuration list for PBXNativeTarget "PayWingsOnboardingKYC-PayWingsOnboardingKYC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809A006B001B3AA0D956C45726E944ED /* Debug */,
+				01643605888C422CB423DA2CDED4974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB7B364F9AC463BC180F539B259C900 /* Build configuration list for PBXNativeTarget "Pods-PayWingsOnboardingKYC-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA6C9B2C5E23D04F1E49FCA16447658 /* Debug */,
+				E35FC593D97C07C76CC422319BF5FF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E3E0F7C38AF8A9553FE5EDC42446C6 /* Build configuration list for PBXNativeTarget "InAppSettingsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55F655F0330A82755BE86758D60F3D36 /* Debug */,
+				431676882F3567099F7EC77CB1B9E5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66C473E55EA058F0A67BDCB2C0ECEEF /* Build configuration list for PBXNativeTarget "InAppSettingsKit-InAppSettingsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD78E2D0BCBF2EC37E5261CFDD272505 /* Debug */,
+				A5D6BC635C4F0B96CFEF45F94F7A61C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4E5E89FECE2790FCE8BED8A621E2D2 /* Build configuration list for PBXAggregateTarget "VideoID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D6170AEBB0A1019B0EC8F697978EB7 /* Debug */,
+				A0D00E88890E55AFA92D8975A3B2759C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

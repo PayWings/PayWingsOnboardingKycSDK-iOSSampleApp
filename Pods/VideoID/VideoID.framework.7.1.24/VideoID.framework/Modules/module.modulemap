@@ -1,0 +1,11 @@
+framework module VideoID {
+  umbrella header "VideoID.h"
+
+  export *
+  module * { export * }
+}
+
+module VideoID.Swift {
+    header "VideoID-Swift.h"
+    requires objc
+}

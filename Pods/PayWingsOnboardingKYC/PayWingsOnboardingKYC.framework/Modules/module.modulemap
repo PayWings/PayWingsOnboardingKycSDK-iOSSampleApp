@@ -1,0 +1,11 @@
+framework module PayWingsOnboardingKYC {
+  umbrella header "PayWingsOnboardingKYC.h"
+
+  export *
+  module * { export * }
+}
+
+module PayWingsOnboardingKYC.Swift {
+  header "PayWingsOnboardingKYC-Swift.h"
+  requires objc
+}
