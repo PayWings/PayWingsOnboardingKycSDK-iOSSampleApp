@@ -328,13 +328,13 @@ extension UIViewController {
         self.view.isUserInteractionEnabled = true
     }
     
-    func transitionFromRightToLeft() {
-
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-        self.navigationController?.view.layer.add(transition, forKey: nil)
-    }
+//    func transitionFromRightToLeft() {
+//
+//        let transition = CATransition()
+//        transition.duration = 0.5
+//        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+//        transition.type = CATransitionType.push
+//        transition.subtype = CATransitionSubtype.fromRight
+//        self.navigationController?.view.layer.add(transition, forKey: nil)
+//    }
 }

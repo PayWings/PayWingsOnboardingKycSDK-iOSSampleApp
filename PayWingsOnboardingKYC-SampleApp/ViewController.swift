@@ -7,28 +7,19 @@
 //
 
 import UIKit
-import AVFoundation
-import PayWingsOnboardingKYC
 import InAppSettingsKit
-
-
-private enum PermissionType : String {
-    case Camera
-    case Microphone
-}
+import PayWingsOAuthSDK
 
 
 class ViewController: UIViewController, IASKSettingsDelegate {
     
-    var latestSdkVersion = "v5.0.0"
+    var kycSdkVersion = "KYC SDK v5.0.0"
+    var oauthSdkVersion = "OAuth SDK v1.1.1"
     
-    @IBOutlet weak var sdkVersion: KycTextLabel!
-    @IBOutlet weak var StartButton: UIButton!
+    @IBOutlet weak var KycSdkVersion: KycTextLabel!
+    @IBOutlet weak var OauthSdkVersion: KycTextLabel!
     
-    var credentials : KycCredentials?
-    var settings : KycSettings?
-    var userData : KycUserData?
-    var config : KycConfig?
+    
     
     var kycStyle : String = "default"
     
@@ -72,7 +63,8 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        sdkVersion.text = latestSdkVersion
+        KycSdkVersion.text = kycSdkVersion
+        OauthSdkVersion.text = oauthSdkVersion
     }
     
     
@@ -94,122 +86,22 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     
     
     @IBAction func startKyc(_ sender: UIButton) {
-        showLoading()
-        checkCameraPermission()
+        performSegue(withIdentifier: "loading", sender: nil)
     }
     
-    func goToKyc() {
-        getKycSettings()
+    @IBAction func startOAuth(_ sender: Any) {
+        let domain = UserDefaults.standard.string(forKey: "domain") ?? ""
+        let apiKey = UserDefaults.standard.string(forKey: "api_key") ?? ""
         
-        DispatchQueue.main.async {
-            let cameraAuthorized = (AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized) ? true : false
-            let microphoneAuthorized = (AVCaptureDevice.authorizationStatus(for: AVMediaType.audio) == .authorized) ? true : false
-            
-            if cameraAuthorized && microphoneAuthorized {
-                
-                self.config = KycConfig(credentials: self.credentials!, settings: self.settings!, userData: self.userData)
-                self.hideLoading()
-                self.performSegue(withIdentifier: "loading", sender: nil)
-            }
-        }
+        PayWingsOAuthClient.initialize(environmentType: .TEST, apiKey: apiKey, domain: domain)
+        performSegue(withIdentifier: "enterMobileNumber", sender: nil)
     }
     
-    func getKycSettings() {
-        
-        let sdkUsername = UserDefaults.standard.string(forKey: "sdk_api_username") ?? ""
-        let sdkPassword = UserDefaults.standard.string(forKey: "sdk_api_password") ?? ""
-        let sdkBaseUrl = UserDefaults.standard.string(forKey: "sdk_api_url") ?? ""
-        
-        credentials = KycCredentials(username: sdkUsername, password: sdkPassword, endpointUrl: sdkBaseUrl)
-        
-        let referenceId = UUID().uuidString
-        let referenceNumber = UserDefaults.standard.string(forKey: "reference_number") ?? ""
-        let language = UserDefaults.standard.string(forKey: "language_preference") ?? ""
-        
-        settings = KycSettings(referenceID: referenceId, referenceNumber: referenceNumber, language: language)
-        
-        let firstName = UserDefaults.standard.string(forKey: "data_first_name") ?? nil
-        let middleName = UserDefaults.standard.string(forKey: "data_middle_name") ?? nil
-        let lastName = UserDefaults.standard.string(forKey: "data_last_name") ?? nil
-        let address1 = UserDefaults.standard.string(forKey: "data_address1") ?? nil
-        let address2 = UserDefaults.standard.string(forKey: "data_address2") ?? nil
-        let address3 = UserDefaults.standard.string(forKey: "data_address3") ?? nil
-        let zipCode = UserDefaults.standard.string(forKey: "data_zip_code") ?? nil
-        let city = UserDefaults.standard.string(forKey: "data_city") ?? nil
-        let state = UserDefaults.standard.string(forKey: "data_state") ?? nil
-        let countryCode = UserDefaults.standard.string(forKey: "data_country_code") ?? nil
-        let email = UserDefaults.standard.string(forKey: "data_email") ?? nil
-        let mobileNumber = UserDefaults.standard.string(forKey: "data_phone_number") ?? nil
-
-        userData = KycUserData(firstName: firstName, middleName: middleName, lastName: lastName, address1: address1, address2: address2, address3: address3, zipCode: zipCode, city: city, state: state, countryCode: countryCode, email: email, mobileNumber: mobileNumber)
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "loading" {
-            guard let vc = segue.destination as? LoadingViewController else { return }
-            vc.config = config
-        }
-    }
     
 }
 
 
 
-extension ViewController {
-    
-    private func checkCameraPermission() {
-        
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-        case .authorized:
-            checkMicrophonePermission()
-        case .notDetermined:
-            AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) -> Void in
-                if granted == true {
-                    self.checkMicrophonePermission()
-                }
-            })
-        case .denied:
-            showPhoneSettings(type: PermissionType.Camera.rawValue)
-        case .restricted: // The user can't grant access due to restrictions.
-            return
-        default:
-            fatalError(NSLocalizedString("Camera Authorization Status not handled!", comment: ""))
-        }
-    }
-    
-    private func checkMicrophonePermission() {
-        
-        switch AVAudioSession.sharedInstance().recordPermission {
-        case .granted:
-            goToKyc()
-        case .denied:
-            showPhoneSettings(type: PermissionType.Microphone.rawValue)
-        case .undetermined:
-            AVAudioSession.sharedInstance().requestRecordPermission({ (granted) in
-                if granted {
-                    self.goToKyc()
-                }
-            })
-        default:
-            fatalError(NSLocalizedString("Microphone Authorization Status not handled!", comment: ""))
-        }
-    }
-
-    private func showPhoneSettings(type: String) {
-        hideLoading()
-        let alertController = UIAlertController(title: NSLocalizedString("Permission Error", comment: ""), message: NSLocalizedString("Permission for ", comment: "") + NSLocalizedString(type, comment: "") + NSLocalizedString(" access denied, please allow our app permission through Settings in your phone if you want to use our service.", comment: ""), preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .default))
-        alertController.addAction(UIAlertAction(title: NSLocalizedString("Settings", comment: ""), style: .cancel) { _ in
-            if let url = URL(string: UIApplication.openSettingsURLString) {
-                UIApplication.shared.open(url, options: [:], completionHandler: { _ in
-                    //
-                })
-            }
-        })
-        present(alertController, animated: true)
-    }
-}
 
 
 extension UINavigationController {

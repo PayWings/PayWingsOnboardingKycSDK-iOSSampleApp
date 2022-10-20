@@ -19,6 +19,12 @@
 		3B5AD88324D1800800481052 /* KycErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87B24D1800700481052 /* KycErrorViewController.swift */; };
 		3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87C24D1800800481052 /* VerificationResult.swift */; };
 		3B5AD88524D1800800481052 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD87D24D1800800481052 /* Settings.bundle */; };
+		3BA460C02901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BB2901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift */; };
+		3BA460C12901CC2B0074B306 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BC2901CC2B0074B306 /* EmailViewController.swift */; };
+		3BA460C22901CC2B0074B306 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BD2901CC2B0074B306 /* PhoneNumberViewController.swift */; };
+		3BA460C32901CC2B0074B306 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BE2901CC2B0074B306 /* ChangeEmailViewController.swift */; };
+		3BA460C42901CC2B0074B306 /* ConfirmEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BF2901CC2B0074B306 /* ConfirmEmailViewController.swift */; };
+		3BA460C62901D53A0074B306 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460C52901D53A0074B306 /* AppData.swift */; };
 		3BA9602125D5B0D8005B0B83 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA9602325D5B0D8005B0B83 /* Localizable.strings */; };
 		3BA9602925D5B201005B0B83 /* LocalizationCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */; };
 		3BF8071128ECDD40002A16D2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3BF8071028ECDD40002A16D2 /* .gitignore */; };
@@ -41,6 +47,12 @@
 		3B5AD87B24D1800700481052 /* KycErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KycErrorViewController.swift; sourceTree = "<group>"; };
 		3B5AD87C24D1800800481052 /* VerificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		3B5AD87D24D1800800481052 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3BA460BB2901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		3BA460BC2901CC2B0074B306 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		3BA460BD2901CC2B0074B306 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		3BA460BE2901CC2B0074B306 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		3BA460BF2901CC2B0074B306 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
+		3BA460C52901D53A0074B306 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		3BA9602225D5B0D8005B0B83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3BA9602425D5B0F2005B0B83 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3BA9602525D5B0FE005B0B83 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -85,12 +97,14 @@
 		3B5AD84224D17C4F00481052 /* PayWingsOnboardingKYC-SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				3BA460BA2901CC2B0074B306 /* OAuth */,
 				3B5AD84924D17C4F00481052 /* Main.storyboard */,
 				3B5AD84724D17C4F00481052 /* ViewController.swift */,
 				3B5AD87924D1800700481052 /* LoadingViewController.swift */,
 				3B5AD87724D1800700481052 /* KycDataViewController.swift */,
 				3B5AD87B24D1800700481052 /* KycErrorViewController.swift */,
 				3B5AD87C24D1800800481052 /* VerificationResult.swift */,
+				3BA460C52901D53A0074B306 /* AppData.swift */,
 				3B5AD87824D1800700481052 /* AppStyle.swift */,
 				3B5AD87D24D1800800481052 /* Settings.bundle */,
 				3B5AD84324D17C4F00481052 /* AppDelegate.swift */,
@@ -102,6 +116,18 @@
 				3BA9602825D5B201005B0B83 /* LocalizationCustom.swift */,
 			);
 			path = "PayWingsOnboardingKYC-SampleApp";
+			sourceTree = "<group>";
+		};
+		3BA460BA2901CC2B0074B306 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3BA460BD2901CC2B0074B306 /* PhoneNumberViewController.swift */,
+				3BA460BB2901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift */,
+				3BA460BC2901CC2B0074B306 /* EmailViewController.swift */,
+				3BA460BF2901CC2B0074B306 /* ConfirmEmailViewController.swift */,
+				3BA460BE2901CC2B0074B306 /* ChangeEmailViewController.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		8AAB0A8D7B7908590EF9DCA1 /* Frameworks */ = {
@@ -263,12 +289,18 @@
 				3B5AD88124D1800800481052 /* LoadingViewController.swift in Sources */,
 				3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */,
 				3B5AD84824D17C4F00481052 /* ViewController.swift in Sources */,
+				3BA460C02901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift in Sources */,
 				3B5AD84424D17C4F00481052 /* AppDelegate.swift in Sources */,
 				3B5AD88024D1800800481052 /* AppStyle.swift in Sources */,
 				3B5AD87F24D1800800481052 /* KycDataViewController.swift in Sources */,
 				3BA9602925D5B201005B0B83 /* LocalizationCustom.swift in Sources */,
+				3BA460C22901CC2B0074B306 /* PhoneNumberViewController.swift in Sources */,
 				3B5AD88324D1800800481052 /* KycErrorViewController.swift in Sources */,
+				3BA460C32901CC2B0074B306 /* ChangeEmailViewController.swift in Sources */,
+				3BA460C12901CC2B0074B306 /* EmailViewController.swift in Sources */,
+				3BA460C42901CC2B0074B306 /* ConfirmEmailViewController.swift in Sources */,
 				3B5AD84624D17C4F00481052 /* SceneDelegate.swift in Sources */,
+				3BA460C62901D53A0074B306 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
