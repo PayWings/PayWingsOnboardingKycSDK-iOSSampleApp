@@ -59,7 +59,6 @@ class LoadingViewController : UIViewController, VerificationResultDelegate {
         let sdkUsername = UserDefaults.standard.string(forKey: "sdk_api_username") ?? ""
         let sdkPassword = UserDefaults.standard.string(forKey: "sdk_api_password") ?? ""
         let sdkBaseUrl = UserDefaults.standard.string(forKey: "sdk_api_url") ?? ""
-        let apiKey = UserDefaults.standard.string(forKey: "api_key") ?? ""
         
         credentials = KycCredentials(username: sdkUsername, password: sdkPassword, endpointUrl: sdkBaseUrl)
         

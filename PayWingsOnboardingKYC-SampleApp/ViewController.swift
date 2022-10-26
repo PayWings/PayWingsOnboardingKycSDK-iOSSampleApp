@@ -115,7 +115,7 @@ extension UINavigationController {
         }
     }
     
-    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation{
+    override open var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         get {
             if let visibleVC = visibleViewController {
                 return visibleVC.preferredInterfaceOrientationForPresentation
