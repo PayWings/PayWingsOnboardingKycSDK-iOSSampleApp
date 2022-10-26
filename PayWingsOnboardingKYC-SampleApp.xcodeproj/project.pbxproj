@@ -17,7 +17,6 @@
 		3B5AD88024D1800800481052 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87824D1800700481052 /* AppStyle.swift */; };
 		3B5AD88124D1800800481052 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87924D1800700481052 /* LoadingViewController.swift */; };
 		3B5AD88324D1800800481052 /* KycErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87B24D1800700481052 /* KycErrorViewController.swift */; };
-		3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5AD87C24D1800800481052 /* VerificationResult.swift */; };
 		3B5AD88524D1800800481052 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5AD87D24D1800800481052 /* Settings.bundle */; };
 		3BA460C02901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BB2901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift */; };
 		3BA460C12901CC2B0074B306 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA460BC2901CC2B0074B306 /* EmailViewController.swift */; };
@@ -45,7 +44,6 @@
 		3B5AD87824D1800700481052 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
 		3B5AD87924D1800700481052 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		3B5AD87B24D1800700481052 /* KycErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KycErrorViewController.swift; sourceTree = "<group>"; };
-		3B5AD87C24D1800800481052 /* VerificationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationResult.swift; sourceTree = "<group>"; };
 		3B5AD87D24D1800800481052 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3BA460BB2901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		3BA460BC2901CC2B0074B306 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				3B5AD87924D1800700481052 /* LoadingViewController.swift */,
 				3B5AD87724D1800700481052 /* KycDataViewController.swift */,
 				3B5AD87B24D1800700481052 /* KycErrorViewController.swift */,
-				3B5AD87C24D1800800481052 /* VerificationResult.swift */,
 				3BA460C52901D53A0074B306 /* AppData.swift */,
 				3B5AD87824D1800700481052 /* AppStyle.swift */,
 				3B5AD87D24D1800800481052 /* Settings.bundle */,
@@ -158,8 +155,8 @@
 				3B5AD83C24D17C4F00481052 /* Sources */,
 				3B5AD83D24D17C4F00481052 /* Frameworks */,
 				3B5AD83E24D17C4F00481052 /* Resources */,
-				D5D0D9588EB4945E12FAE3B9 /* [CP] Embed Pods Frameworks */,
-				D67316661629677B7618D4A7 /* [CP] Copy Pods Resources */,
+				DD992DED975978D88960D752 /* [CP] Embed Pods Frameworks */,
+				9DFE0208FE60705C0E5F2FE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,24 +242,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5D0D9588EB4945E12FAE3B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D67316661629677B7618D4A7 /* [CP] Copy Pods Resources */ = {
+		9DFE0208FE60705C0E5F2FE8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +259,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD992DED975978D88960D752 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOnboardingKYC-SampleApp/Pods-PayWingsOnboardingKYC-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5AD88124D1800800481052 /* LoadingViewController.swift in Sources */,
-				3B5AD88424D1800800481052 /* VerificationResult.swift in Sources */,
 				3B5AD84824D17C4F00481052 /* ViewController.swift in Sources */,
 				3BA460C02901CC2B0074B306 /* ConfirmPhoneNumberViewController.swift in Sources */,
 				3B5AD84424D17C4F00481052 /* AppDelegate.swift in Sources */,
