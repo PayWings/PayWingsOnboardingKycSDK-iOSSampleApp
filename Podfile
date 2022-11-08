@@ -7,9 +7,9 @@ target 'PayWingsOnboardingKYC-SampleApp' do
 
   # Pods for PayWingsOnboardingKYC-SampleApp
 
-  pod 'PayWingsOnboardingKYC', '5.1.0'
+  pod 'PayWingsOnboardingKYC', '5.1.1'
   pod 'IdensicMobileSDK', :http => 'https://github.com/paywings/PayWingsOnboardingKycSDK-iOS-IdensicMobile/archive/v2.0.0.tar.gz'
-  pod 'PayWingsOAuthSDK', '1.1.1'
+  pod 'PayWingsOAuthSDK', '1.2.0'
   pod 'InAppSettingsKit', '3.3'
 
 
