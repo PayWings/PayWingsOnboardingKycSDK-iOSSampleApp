@@ -73,6 +73,7 @@ class ConfirmPhoneNumberViewController : UIViewController, SignInWithPhoneNumber
     func onSignInSuccessful(refreshToken: String, accessToken: String, accessTokenExpirationTime: Int64) {
         AppData.shared().accessToken = accessToken
         AppData.shared().refreshToken = refreshToken
+        //debugPrint(accessToken)
         hideLoading()
         performSegue(withIdentifier: "loading", sender: nil)
 //        refreshAccessToken()

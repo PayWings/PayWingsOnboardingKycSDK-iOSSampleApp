@@ -46,7 +46,7 @@
 			<key>Key</key>
 			<string>sdk_api_url</string>
 			<key>DefaultValue</key>
-			<string>https://onboarding-kyc-dev.paywings.io/mobile</string>
+			<string>https://kyc-test.paywings.io/mobile</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>AutocapitalizationType</key>
