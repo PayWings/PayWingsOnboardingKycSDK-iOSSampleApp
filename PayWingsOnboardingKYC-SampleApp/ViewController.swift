@@ -13,7 +13,7 @@ import PayWingsOAuthSDK
 
 class ViewController: UIViewController, IASKSettingsDelegate {
     
-    var kycSdkVersion = "KYC SDK v5.1.2"
+    var kycSdkVersion = "KYC SDK v5.1.3"
     var oauthSdkVersion = "OAuth SDK v1.2.1"
     
     @IBOutlet weak var KycSdkVersion: KycTextLabel!

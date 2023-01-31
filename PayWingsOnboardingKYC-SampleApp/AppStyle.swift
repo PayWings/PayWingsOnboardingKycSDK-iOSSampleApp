@@ -12,6 +12,11 @@ import PayWingsOnboardingKYC
 
 class AppStyle {
     
+    static func setVideoTheme() {
+        
+        PayWingsOnboardingKYC.Style.VideoTheme.colors.backgroundCommon = UIColor.green
+    }
+    
     static func setCustomStyle() {
         
         PayWingsOnboardingKYC.Style.Colors.backgroundColor = .white
@@ -48,6 +53,8 @@ class AppStyle {
     }
     
     static func setDefaultStyle() {
+        
+        setVideoTheme()
         
         PayWingsOnboardingKYC.Style.Colors.backgroundColor = .systemGroupedBackground
         PayWingsOnboardingKYC.Style.Colors.secondaryBackgroundColor = .secondarySystemGroupedBackground
