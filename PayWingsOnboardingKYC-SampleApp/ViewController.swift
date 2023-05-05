@@ -13,8 +13,8 @@ import PayWingsOAuthSDK
 
 class ViewController: UIViewController, IASKSettingsDelegate {
     
-    var kycSdkVersion = "KYC SDK v5.1.3"
-    var oauthSdkVersion = "OAuth SDK v1.2.1"
+    var kycSdkVersion = "KYC SDK v5.1.5"
+    var oauthSdkVersion = "OAuth SDK v1.2.2"
     
     @IBOutlet weak var KycSdkVersion: KycTextLabel!
     @IBOutlet weak var OauthSdkVersion: KycTextLabel!
@@ -86,6 +86,8 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     
     
     @IBAction func startKyc(_ sender: UIButton) {
+        
+        guard AppData.shared().accessToken != nil else { return }
         performSegue(withIdentifier: "loading", sender: nil)
     }
     

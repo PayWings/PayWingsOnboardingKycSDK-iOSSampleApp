@@ -14,7 +14,7 @@ class AppStyle {
     
     static func setVideoTheme() {
         
-        PayWingsOnboardingKYC.Style.VideoTheme.colors.backgroundCommon = UIColor.green
+//        PayWingsOnboardingKYC.Style.VideoTheme.colors.backgroundCommon = UIColor.green
     }
     
     static func setCustomStyle() {
