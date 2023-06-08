@@ -47,7 +47,7 @@ class LoadingViewController : UIViewController, VerificationResultDelegate {
             
             if cameraAuthorized && microphoneAuthorized {
                 
-                let config = KycConfig(credentials: self.credentials!, settings: self.settings!, userData: self.userData, userCredentials: self.userCredentials)
+                let config = KycConfig(credentials: self.credentials!, settings: self.settings!, userData: self.userData, userCredentials: self.userCredentials!)
                 PayWingsOnboardingKyc.startKyc(vc: self, config: config, result: self.result)
             }
         }
@@ -83,8 +83,8 @@ class LoadingViewController : UIViewController, VerificationResultDelegate {
 
         userData = KycUserData(firstName: firstName, middleName: middleName, lastName: lastName, address1: address1, address2: address2, address3: address3, zipCode: zipCode, city: city, state: state, countryCode: countryCode, email: email, mobileNumber: mobileNumber)
         
-        if let token = AppData.shared().accessToken {
-            userCredentials = UserCredentials(accessToken: token, refreshToken: AppData.shared().refreshToken)
+        if let aToken = AppData.shared().accessToken, let rToken = AppData.shared().refreshToken {
+            userCredentials = UserCredentials(accessToken: aToken, refreshToken: rToken)
         }
     }
     
